@@ -36,7 +36,7 @@ const Header = () => {
               <a href="#">Nos solutions<i className="fas fa-chevron-down"></i></a>
               <ul className="submenu">
                 <li><Link href="/sections/solutions/cloud">Cloud</Link></li>
-                <li><Link href="/sections/solutions/saisie-des-donnes">Saisie des données</Link></li>
+                <li><Link href="/sections/solutions/saisie-des-donnees">Saisie des données</Link></li>
                 <li><Link href="/sections/solutions/previsionnels">Prévisionnels</Link></li>
                 <li><Link href="/sections/solutions/modulation">Modulation</Link></li>
                 <li><Link href="/sections/solutions/optimisation">Optimisation</Link></li>

@@ -204,7 +204,7 @@ export default function Home() {
       {/* Section Franck Lebeurre */}
       <section className="franck-lebeurre">
         <div className="fl-content">
-          <img className="desktop-delete" src="/images/Untitled 1 (1).webp" alt="Franck Lebeurre" />
+          <img className="desktop-delete" src="/images/franck.webp" alt="Franck Lebeurre" />
           <h1>Franck Lebeurre</h1>
           <p>Fort d&apos;une expérience professionnelle de 25 ans passés aux côtés d&apos;entreprises de différents horizons, Franck
             LEBEURRE met à profits son savoir faire aux services des entrepreneurs et professions libérales pour les
@@ -215,7 +215,7 @@ export default function Home() {
             activité. </p>
         </div>
         <div className="image">
-          <img src="/images/Untitled 1 (1).webp" alt="Franck Lebeurre" />
+          <img src="/images/franck.webp" alt="Franck Lebeurre" />
         </div>
       </section>
     </main>

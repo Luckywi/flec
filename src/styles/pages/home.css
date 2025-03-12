@@ -152,7 +152,7 @@
 /* Section 3 styling */
 
 .franck-lebeurre {
-    padding: 40px 0;
+    padding: 20px 0;
     display: flex;
     justify-content: space-between;
     margin: 30px;
@@ -180,16 +180,17 @@
 }
 
 .image {
-    width: 50%;
+    width: 30%;
     flex: 1;
     position: relative;
 }
 
 .image img {
 
-    width: 50%;
+    width: 40%;
     margin-left: 20%;
     border-radius: 10px;
+    margin-bottom: 20%;
 
 }
 
@@ -348,10 +349,10 @@
     }
 
     .franck-lebeurre img{
-        width: 300px;
+        width: 150px;
         display: flex;
         margin: auto;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
 
 
     }
