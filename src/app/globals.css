@@ -1,0 +1,9 @@
+/* 
+  Ce fichier ne contient que des variables minimales pour les polices Geist
+  et ne devrait pas affecter le style CSS existant
+*/
+
+:root {
+    --font-geist-sans: '';
+    --font-geist-mono: '';
+  }
