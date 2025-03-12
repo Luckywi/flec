@@ -1,0 +1,470 @@
+/* Navbar Styling */
+.navbar {
+  background-color: black;
+  padding: 13px;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.fa-home {
+  font-size: 1em;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  white-space: nowrap;
+}
+
+.fa-phone {
+  margin-left: 7px;
+  font-size: 1em;
+}
+
+.fa-user {
+  margin-left: 7px;
+  font-size: 1em;
+}
+
+.fa-chevron-down {
+  margin-left: 7px;
+  font-size: 1em;
+}
+
+.visible {
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+/* Submenu Styling */
+.submenu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: black;
+  display: none;
+  z-index: 1001;
+  padding: 0;
+  min-width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.submenu li {
+  width: 100%;
+}
+
+.submenu li a {
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  white-space: nowrap;
+  text-decoration: none;
+  text-transform: none; /* Ajout de cette ligne pour empêcher la transformation en majuscules */
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.logo a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-size: 15px;
+}
+
+.logo p {
+  font-size: 10px;
+  margin-bottom: 0px;
+  margin-top: 1px;
+}
+
+/* Masquer les checkboxes */
+.menu-toggle-checkbox,
+.submenu-toggle-checkbox {
+  display: none;
+}
+
+/* Restaurer l'apparence des liens de menu */
+.menu-item > label {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  white-space: nowrap;
+  text-transform: none; /* Ajout de cette ligne pour empêcher la transformation en majuscules */
+}
+
+
+/* Navbar Styling 2 */
+
+.sub-nav {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: max-content;
+  padding: 10px 40px;
+  margin: 30px auto;
+  border-radius: 10px;
+  color: white;
+}
+
+.sub-nav a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 7px;
+  text-transform: none; /* Ajout de cette ligne pour empêcher la transformation en majuscules */
+}
+
+.sub-nav a i {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.sub-nav a.active {
+  background-color: white;
+  color: #000;
+  border-radius: 10px;
+
+}
+
+.sub-nav a:hover {
+  background-color: white;
+  color: #000;
+  border-radius: 10px;
+}
+
+/* Navbar Styling 3 */
+
+.nav-title-container {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin: auto;
+  width: 60%;
+  margin-top: 30px;
+}
+
+.nav-with-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding-bottom: 25px;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 7px;
+  margin: 25px;
+  border-radius: 10px;
+  text-transform: none; /* Ajout de cette ligne pour empêcher la transformation en majuscules */
+}
+
+.nav-item i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+
+.nav-item.active,
+.nav-item:hover {
+  background-color: white;
+  color: #000;
+}
+
+.nav-title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+}
+
+.menu-bar{
+  display: none;
+}
+
+
+@media screen and (max-width: 1130px) {
+
+  .navbar {
+    display: none;
+  }
+
+/* Styles de base pour le menu */
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1001;
+}
+
+.header-content {
+  display: flex;
+  padding: 5px;
+  padding-left: 15px;
+  align-items: center;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:checked + .header-content .menu-toggle i {
+  transform: rotate(180deg);
+}
+
+.title {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+.title p {
+  margin: 0;
+  font-size: 0.7rem;
+}
+
+/* Styles pour le menu déroulant */
+.dropdown-content {
+  display: none;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.dropdown:checked ~ .dropdown-content {
+  display: block;
+}
+
+/* Styles pour les sous-menus */
+.for-dropdown-sub {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: none; /* Ajout de cette ligne pour empêcher la transformation en majuscules */
+}
+
+.for-dropdown-sub:hover{
+  background-color: white;
+  color: black;
+}
+
+.for-dropdown-sub span {
+  display: flex;
+  align-items: center;
+  text-transform: none; /* Ajout de cette ligne pour empêcher la transformation en majuscules */
+}
+
+.for-dropdown-sub i {
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.dropdown-sub:checked + .for-dropdown-sub i {
+  transform: rotate(180deg);
+}
+
+.section-dropdown-sub {
+  display: none;
+  padding-left: 20px;
+}
+
+.dropdown-sub:checked ~ .section-dropdown-sub {
+  display: block;
+}
+
+.section-dropdown-sub a {
+  display: block;
+  padding: 8px 20px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  text-transform: none; /* Ajout de cette ligne pour empêcher la transformation en majuscules */
+}
+
+.section-dropdown-sub a:hover {
+  background-color: #444;
+}
+
+/* Styles pour les boutons en bas du menu */
+.dropdown-content > div:last-child {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 20px;
+}
+
+.dropdown-content > div:last-child a {
+  padding: 8px 15px;
+  border: 2px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-transform: none; /* Ajout de cette ligne pour empêcher la transformation en majuscules */
+}
+
+.dropdown-content > div:last-child a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Cacher les checkboxes */
+.dropdown,
+.dropdown-sub {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Navbar Styling 2 */
+
+.sub-nav {
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: max-content;
+  padding: 0.8rem;
+  padding-top: 75px;
+  margin:auto;
+  border-radius: 10px;
+  color: white;
+}
+
+.sub-nav a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 7px;
+}
+
+.sub-nav a i {
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.sub-nav a.active {
+  background-color: white;
+  color: #000;
+  border-radius: 10px;
+
+}
+
+.sub-nav a:hover {
+  background-color: white;
+  color: #000;
+  border-radius: 10px;
+}
+
+/* Navbar Styling 3 */
+
+.nav-title-container {
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  margin: auto;
+  width: 90%;
+  margin-top: 60px;
+}
+
+.nav-with-title {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  padding-bottom: 25px;
+}
+
+.nav-item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.nav-item i {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+
+.nav-item.active,
+.nav-item:hover {
+  background-color: white;
+  color: #000;
+}
+
+.nav-title {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+}
+
+}

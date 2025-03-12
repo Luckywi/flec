@@ -1,0 +1,76 @@
+/* Mentions Légales */
+
+.titre-informations{
+    color: white;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.legal-info-container {
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.legal-info__section {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 20Px;
+}
+
+.legal-info__subtitle {
+    margin-top: 20px;
+    color: white;
+}
+
+.legal-info__text {
+    margin-bottom: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.legal-info__order {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.legal-info__order-text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+
+
+.legal-info__logo {
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    height: auto;
+    margin-bottom: 40px;
+}
+
+.legal-info__link {
+    text-decoration: underline;
+    color: white;
+}
+
+.legal-info__link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+
+    .titre-informations{
+        margin-top: 70px;
+    }
+
+}

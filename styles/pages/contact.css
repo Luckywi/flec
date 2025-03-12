@@ -1,0 +1,398 @@
+/* RDV */
+
+
+.form-grid {
+    display: grid;
+    margin: 30px;
+    margin-right: 60px;
+    margin-left: 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .full-width {
+    grid-column: 1 / -1;
+  }
+  .form-grid label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: large;
+    color: white;
+  
+  }
+  .form-grid input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: black;
+    color: white;
+
+  }
+  .form-grid textarea {
+    resize: vertical; 
+    min-height: 100px;
+    max-height: 300px;
+    color: white;
+  }
+  
+  .submit{
+    background-color: #000;
+    border: 2px solid white;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  .submit:hover{
+  background-color: #333;
+  transform: translateY(-2px);
+  transition: transform 0.3s ease;
+  }
+  
+  
+  .container-card {
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Changé de auto à une valeur fixe */
+    padding: 40px; /* Ajouté pour donner de l'espace interne */
+    box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur */
+}
+  
+  .step {
+    background-color: #000;
+    border: 2px solid white;
+    border-radius: 10px;  
+    color: #fff;
+    padding: 20px;
+    margin: 20px;
+    flex: 1;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+  }
+
+  .step h2 {
+    margin: 0px;
+  }
+
+  .step p{
+    height: 100px;
+    margin: 0px;
+    padding-bottom: 20px;
+  }
+
+
+  .section-container-rdv {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.section-container-rdv h1 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.section-container-rdv p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+  
+  
+  .step:hover {
+    transform: scale(1.05);
+  }
+  .icon {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+
+  .carousel4 {
+    height: min-conten;
+    margin: 0;
+    display: grid;
+
+    grid-template-columns: 50px 1fr 50px;
+    align-items: center;
+    justify-items: center;
+    position: relative;
+  }
+  
+  .carousel4 input[type="radio"] {
+    display: none;
+  }
+  
+  .carousel4 #carousel {
+    grid-column: 1 / 4;
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    --items: 5;
+    --middle: 3;
+    --position: 1;
+  }
+  
+  /* Style pour les flèches */
+  .carousel4 .nav {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background:  black;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 10;
+    transition: background 0.3s;
+    display: none; /* Cache toutes les flèches par défaut */
+    color: white; 
+  }
+  
+  
+  .carousel4 .prev {
+    left: 10rem;
+
+  }
+  
+  .carousel4 .next {
+    right: 10rem;
+  }
+  
+  /* Affichage des bonnes flèches selon la slide active */
+  #slide1:checked ~ .prev.slide5,
+  #slide1:checked ~ .next.slide2,
+  #slide2:checked ~ .prev.slide1,
+  #slide2:checked ~ .next.slide3,
+  #slide3:checked ~ .prev.slide2,
+  #slide3:checked ~ .next.slide4,
+  #slide4:checked ~ .prev.slide3,
+  #slide4:checked ~ .next.slide5,
+  #slide5:checked ~ .prev.slide4,
+  #slide5:checked ~ .next.slide1 {
+    display: flex;
+  }
+  
+  .carousel4 .item {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r)))
+      translateX(calc(-300px * var(--r)))
+      scale(calc(1 + 0.05 * (1 - var(--abs)))); /* Ajoute le scale */
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+  
+  .carousel4 .item:nth-of-type(1) {
+    --offset: 1;
+    background-color: none;
+  }
+  
+  .carousel4 .item:nth-of-type(2) {
+    --offset: 2;
+    background-color: none;
+  }
+  
+  .carousel4 .item:nth-of-type(3) {
+    --offset: 3;
+    background-color: none;
+  }
+  
+  .carousel4 .item:nth-of-type(4) {
+    --offset: 4;
+    background-color: none;
+  }
+  
+ 
+  /* Position du carousel selon la slide sélectionnée */
+  #slide1:checked ~ #carousel {
+    --position: 1;
+  }
+  
+  #slide2:checked ~ #carousel {
+    --position: 2;
+  }
+  
+  #slide3:checked ~ #carousel {
+    --position: 3;
+  }
+  
+  #slide4:checked ~ #carousel {
+    --position: 4;
+  }
+
+
+
+  .success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 4px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.error-message {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 4px;
+    text-align: center;
+    max-width: 800px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+  @media screen and (max-width: 768px) {
+
+    .section-container-rdv{
+      max-width: 800px;
+      margin: 25px;
+      margin-top: 70px;
+      padding: 0px;
+      text-align: center;
+    }
+  
+  
+  .section-container-rdv h1 {
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+  
+  .section-container-rdv p {
+    color: white;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+
+  .form-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Une seule colonne pour mobile */
+    margin: 20px; /* Réduire les marges sur mobile */
+    gap: 15px; /* Réduire l'espacement entre les champs */
+  }
+
+  .full-width {
+    grid-column: 1 / 2; /* Assurez-vous que les éléments full-width occupent une seule colonne */
+  }
+
+  .form-grid label {
+    font-size: medium; /* Réduire la taille des labels */
+    margin-bottom: 8px; /* Réduire l'espace en bas du label */
+  }
+
+  .form-grid input, select, textarea {
+    padding: 8px; /* Réduire les paddings */
+    font-size: 14px; /* Réduire la taille du texte */
+    border-radius: 8px; /* Ajustement des coins arrondis */
+  }
+
+  #message textarea {
+    min-height: 80px; /* Ajuster la hauteur des textarea */
+    max-height: 200px;
+  }
+
+  .submit {
+    font-size: 14px; /* Réduire la taille du texte */
+    padding: 10px; /* Réduire le padding */
+    width: 60%; /* S'assurer que le bouton prend toute la largeur sur mobile */
+    margin-bottom: 20px; /* Réduire la marge en bas */
+  }
+  
+  .step {
+    padding: 10px;
+    height: 200px;
+    margin: 5px;
+    background-color: #000;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .step p {
+    height: 70px; /* Ajustement automatique de la hauteur du texte */
+    font-size: 14px; /* Réduire la taille du texte */
+  }
+
+  .step h2{
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 18px; /* Réduire la taille de l'icône */
+  }
+
+  .carousel4 #carousel {
+    height: 250px;
+
+  }
+
+    /* Cache les flèches sur mobile */
+    .carousel4 .nav {
+      display: none !important; /* !important pour surpasser les autres règles */
+    }
+  
+    /* Permet le défilement tactile */
+    .carousel4 #carousel {
+      touch-action: pan-x; /* Autorise le défilement horizontal */
+      -webkit-overflow-scrolling: touch; /* Défilement fluide sur iOS */
+    }
+  
+    /* Ajustement pour un meilleur comportement tactile */
+    .carousel4 .item {
+      user-select: none; /* Empêche la sélection de texte pendant le défilement */
+      -webkit-user-drag: none; /* Empêche le drag par défaut sur iOS */
+    }
+
+
+}
+  
+
+
+
+      
+ 
+

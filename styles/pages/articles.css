@@ -1,0 +1,235 @@
+/* Style principal de l'article */
+.article-single {
+    position: relative;
+    min-height: 100vh;
+    background: #000000;
+    color: #ffffff;
+    padding-top: 80px;
+ }
+ 
+ .article-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 1rem;
+ }
+ 
+ /* En-tête avec bouton retour */
+ .article-header {
+    margin-bottom: 2rem;
+ }
+ 
+ .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    margin-top: 0; 
+ }
+ 
+ .back-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.25rem;
+    background: black;
+    border: 2px solid white;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+ }
+ 
+ .back-button:hover {
+    background: #333;
+ }
+ 
+ .article-metadata {
+    display: flex;
+    gap: 1rem;
+    color: white;
+ }
+ 
+ .article-header h1 {
+   margin-top: 15px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+ }
+ 
+ /* Conteneur vidéo */
+ .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* Ratio 16:9 */
+    height: 0;
+    overflow: hidden;
+    margin: 2rem 0;
+ }
+ 
+ .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+ }
+ 
+ /* Contenu de l'article */
+ .article-content {
+    line-height: 1.8;
+ }
+ 
+ .article-content p {
+    margin-bottom: 1.5rem;
+    color: #888;
+ }
+ 
+ /* Réseaux sociaux */
+ .social-share {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid #ffffff;
+ }
+ 
+ .social-icons {
+   margin: auto;
+    display: flex;
+    gap: 1rem;
+ }
+ 
+ .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: black;
+    border: 2px solid white;
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+ }
+ 
+ .social-icon:hover {
+    background: #333;
+    transform: translateY(-2px);
+ }
+
+ .youtube-embed-wrapper {
+   position: relative;
+   padding-bottom: 56.25%;
+   height: 0;
+   overflow: hidden;
+   max-width: 100%;
+   margin: 20px 0;
+   background: #f0f0f0;
+   cursor: pointer;
+}
+
+.youtube-thumbnail {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+}
+.play-button {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 68px;
+   height: 48px;
+   background-color: black;
+   border-radius: 100%;
+   z-index: 2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.3s;
+}
+.play-button:hover {
+   background-color: rgba(0,0,0,0.9);
+}
+.play-button svg {
+   width: 24px;
+   height: 24px;
+   fill: white;
+}
+ 
+ /* Media Queries pour Mobile */
+ @media screen and (max-width: 768px) {
+    .article-container {
+        padding: 2rem 1rem;
+    }
+ 
+    .header-top {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0px;
+        margin-bottom: 35px;
+        gap: 1rem;
+    }
+
+ 
+    .back-button {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+ 
+    .article-header h1 {
+        font-size: 1.75rem;
+        text-align: center;
+    }
+ 
+    .social-share {
+        gap: 3px;
+    }
+ 
+    .article-content {
+        font-size: 0.95rem;
+    }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    .article-container {
+        padding: 1.5rem 1rem;
+    }
+ 
+    .article-header h1 {
+        font-size: 1.5rem;
+    }
+ 
+
+    .article-content {
+        font-size: 0.9rem;
+    }
+ }
+ 
+ /* Fix pour iOS */
+ @supports (-webkit-touch-callout: none) {
+    .article-container {
+        padding-bottom: env(safe-area-inset-bottom);
+    }
+ }
+ 
+ /* Améliorations d'accessibilité */
+ .back-button:focus,
+ .social-icon:focus {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+ }
+ 
+ /* Animations optimisées */
+ @media (prefers-reduced-motion: no-preference) {
+    .social-icon {
+        will-change: transform;
+    }
+ }

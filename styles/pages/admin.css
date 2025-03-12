@@ -1,0 +1,268 @@
+/* admin.css */
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: small;
+}
+
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: #111;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.form-section {
+    background: #111;
+    border-radius: 8px;
+    padding: 2.5rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-sizing: border-box;
+}
+
+.form-header {
+    border-bottom: 1px solid #333;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label, 
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: white;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+
+}
+
+
+input, 
+textarea, 
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    min-height: 50px;
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+input:focus, 
+textarea:focus {
+    outline: none;
+    border-color: #666;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+textarea {
+    min-height: 200px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.btn-publish {
+    width: auto;
+    min-width: 200px;
+    margin: 2rem auto 0;
+    display: block;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-publish:hover {
+    background: white;
+    color: black;
+    transform: translateY(-1px);
+}
+
+.articles-section {
+    background: #111;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.articles-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #333;
+    padding-bottom: 1rem;
+}
+
+.article-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background: #1a1a1a;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.article-item:hover {
+    transform: translateX(5px);
+    background: #222;
+}
+
+.article-info {
+    flex: 1;
+}
+
+.article-title {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.article-date {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.btn-delete {
+    background: transparent;
+    color: #ff4444;
+    border: 2px solid #ff4444;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-delete:hover {
+    background: #ff4444;
+    color: white;
+}
+
+.btn-logout {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: white;
+    color: black;
+}
+
+
+/* Styles pour la prévisualisation des vidéos */
+.video-preview {
+    position: relative;
+}
+
+.video-indicator {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.video-preview:hover .video-indicator {
+    opacity: 1;
+}
+
+/* Styles pour les mots-clés */
+.article-keywords {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.keyword {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.keyword:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Amélioration de l'apparence des articles */
+.article-preview {
+    transition: transform 0.3s ease;
+}
+
+.article-preview:hover {
+    transform: translateY(-5px);
+}
+
+
+
+@media (max-width: 768px) {
+    .admin-container {
+        padding: 1rem;
+    }
+    
+    .form-section, 
+    .articles-section {
+        padding: 1.5rem;
+    }
+
+    .articles-section h2{
+        font-size: larger;
+    }
+
+    .form-section h2{
+        font-size: larger;
+    }
+}

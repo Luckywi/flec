@@ -1,0 +1,391 @@
+/* Accueil */
+
+
+.hero-section {
+    display: flex;
+    height: fit-content;
+    background-color: black;
+    margin: 50px;
+}
+
+.hero-content {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+.hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-description {
+    margin-bottom: 2rem;
+}
+
+.button-rdv {
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border: 2px solid white;
+    width: fit-content;
+}
+
+.button-rdv:hover {
+    background-color: white;
+    color: black;
+}
+
+.video-background {
+    width: 50%;
+}
+
+.video-background video {
+    display: flex;
+    margin: auto;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+
+}
+
+
+/* Section 1 styling */
+
+
+.services-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    color: white;
+    margin: 50px;
+    gap: 30px;
+
+}
+
+.service-2 {
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.service-2 h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service-2 p {
+    font-size: 16px;
+    padding-bottom: 15px;
+    height: 57px;
+}
+
+.learn-more {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.learn-more i {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+/* Section 2 styling */
+
+.stats-carousel-container {
+    overflow: hidden;
+    margin: 30px;
+    border-radius: 10px;
+    background-color: black;
+    padding: 10px;
+}
+
+.stats-carousel-track {
+    display: flex;
+    animation: scroll 40s linear infinite;
+}
+
+.stat-item {
+    flex: 0 0 300px;
+    width: 300px;
+    padding: 20px;
+    border: solid 2px white;
+    margin: 15px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+/* Nouveau : Créer une copie du contenu pour un défilement vraiment infini */
+.stats-carousel-track::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+}
+
+/* Section 3 styling */
+
+.franck-lebeurre {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    align-items: center;
+}
+
+.fl-content {
+    width: 50%;
+    flex: 1;
+    color: white;
+}
+
+.franck-lebeurre h1 {
+    margin-right: 10%;
+    margin-left: 20%;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.franck-lebeurre p {
+    margin-right: 10%;
+    margin-left: 20%;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.image {
+    width: 50%;
+    flex: 1;
+    position: relative;
+}
+
+.image img {
+
+    width: 50%;
+    margin-left: 20%;
+    border-radius: 10px;
+
+}
+
+.desktop-delete{
+    display: none;
+}
+
+
+.service-2 h2 i {
+    display: none;
+}
+
+
+/* Styles pour mobile */
+@media screen and (max-width: 768px) {
+
+    body {
+        margin: 0;
+    }
+    
+    p{
+        font-size: 0.6rem;
+    }
+
+    .desktop-delete{
+        display: block;
+    }
+
+    .mobile-delete{
+        display: none;
+    }
+
+    .services-2{
+        display: none;
+    }
+
+    .hero-section {
+        color: white;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        box-sizing: border-box;
+        overflow-y: auto;
+        margin: 0%;
+    }
+    
+    .video-background {
+        width: 50%;
+        height: 100%;
+        padding: 0%;
+        margin-bottom: 20px;
+        margin-top: 65px;
+    }
+    
+    .video-background video {
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+        object-fit: cover;
+    }
+    
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 0%;
+
+    }
+    
+    .hero-title {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        padding: 0.8rem;
+        text-align: center;
+    }
+    
+    .hero-description {
+        font-size: 0.6rem;
+        width: 75%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .hero-description p {
+        margin-bottom: 0.8rem;
+    }
+    
+
+    .learn-more {
+        color: white;
+        text-decoration: none;
+        font-size: 0.7rem;
+        font-weight: bold;
+    }
+
+    .learn-more i {
+        margin-left: 2px;
+        font-size: 12px;
+    }
+    
+    .stats-carousel-container {
+        overflow: hidden;
+        margin: 0px;
+        border-radius: 10px;
+        background-color: black;
+        padding: auto;
+    }
+    
+    .stats-carousel-track {
+        display: flex;
+        animation: scroll 40s linear infinite;
+    }
+
+    .stats-carousel-container h2{
+        font-size: 1rem;
+        margin: 0px;
+    }
+
+    .stats-carousel-container p{
+        font-size: 0.8rem;
+        margin:0px;
+        margin-top: 2px;
+
+    }
+    
+    .stat-item {
+        flex: 0 0 180px;
+        width: 180px;
+        padding: 10px;
+        border: solid 2px white;
+        margin: 8px;
+        border-radius: 10px;
+        box-sizing: border-box;
+        color: white;
+    }
+
+    .franck-lebeurre {
+        padding: 0px;
+        display: flex;
+        justify-content: space-between;
+        margin: 30px;
+        align-items: center;
+    }
+    
+    .franck-lebeurre h1 {
+        margin: 0px;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+    
+    .franck-lebeurre p {
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: 0.8rem;
+    }
+
+    .franck-lebeurre img{
+        width: 300px;
+        display: flex;
+        margin: auto;
+        margin-bottom: 15px;
+
+
+    }
+    
+    .image {
+       display: none;
+    }
+    
+    .image img {
+    
+        display: none;
+    
+    }
+
+    .button-rdv {
+        background-color: white;
+        color: black;
+        text-decoration: none;
+        border-radius: 10px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        border: none;
+        border: 2px solid white;
+        width: fit-content;
+        font-size: 0.8rem;
+        padding: 0.5rem;
+    }
+    
+    .button-rdv:hover {
+        background-color: black;
+        color:  white;
+        border: 2px solid white;
+    }
+    
+    
+
+}
