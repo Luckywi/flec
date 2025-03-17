@@ -46,9 +46,6 @@ const Header = () => {
             <li className="menu-item visible">
               <Link href="/sections/autres/rdv">Se faire appeler<i className="fas fa-phone"></i></Link>
             </li>
-            <li className="menu-item visible">
-              <Link href="/sections/autres/login">Connexion<i className="fas fa-user"></i></Link>
-            </li>
           </ul>
         </nav>
       </header>
@@ -110,12 +107,6 @@ const Header = () => {
               href="/sections/autres/rdv"
             >
               Se faire appeler<i className="fas fa-phone"></i>
-            </Link>
-            <Link 
-              style={{ border: '2px solid white', borderRadius: '10px' }}
-              href="/sections/autres/login"
-            >
-              Connexion<i className="fas fa-user"></i>
             </Link>
           </div>
         </div>
