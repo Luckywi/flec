@@ -1,4 +1,4 @@
-/* src/styles/pages/article-single.css */
+/* src/styles/pages/article.css - à importer dans main.css si ce n'est pas déjà fait */
 
 .article-single {
    position: relative;
@@ -24,7 +24,6 @@
    justify-content: space-between;
    align-items: center;
    margin-bottom: 1.5rem;
-   margin-top: 0; 
  }
  
  .back-button {
@@ -51,11 +50,45 @@
  }
  
  .article-header h1 {
-   margin-top: 15px;
    font-size: 2.5rem;
    font-weight: bold;
    line-height: 1.2;
    text-align: center;
+ }
+ 
+ /* Table des matières */
+ .article-toc {
+   background: rgba(255, 255, 255, 0.05);
+   border-radius: 8px;
+   padding: 1.5rem;
+   margin-bottom: 2rem;
+ }
+ 
+ .article-toc h2 {
+   margin-top: 0;
+   margin-bottom: 1rem;
+   font-size: 1.5rem;
+ }
+ 
+ .article-toc ul {
+   list-style: none;
+   padding-left: 0;
+   margin-bottom: 0;
+ }
+ 
+ .article-toc li {
+   margin-bottom: 0.5rem;
+ }
+ 
+ .article-toc a {
+   color: #ffffff;
+   text-decoration: none;
+   transition: color 0.3s ease;
+ }
+ 
+ .article-toc a:hover {
+   color: #cccccc;
+   text-decoration: underline;
  }
  
  /* Conteneur vidéo */
@@ -90,6 +123,8 @@
    margin-top: 2rem;
    margin-bottom: 1rem;
    font-size: 1.5rem;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   padding-bottom: 0.5rem;
  }
  
  .article-content h3 {
@@ -105,6 +140,60 @@
  
  .article-content li {
    margin-bottom: 0.5rem;
+ }
+ 
+ .article-content blockquote {
+   margin: 1.5rem 0;
+   padding: 1rem 2rem;
+   border-left: 4px solid white;
+   background-color: rgba(255, 255, 255, 0.05);
+   font-style: italic;
+ }
+ 
+ .article-content table {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 1.5rem 0;
+ }
+ 
+ .article-content th,
+ .article-content td {
+   padding: 0.75rem;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ 
+ .article-content th {
+   background-color: rgba(255, 255, 255, 0.1);
+   text-align: left;
+ }
+ 
+ .article-content img {
+   max-width: 100%;
+   height: auto;
+   border-radius: 8px;
+   margin: 1.5rem 0;
+ }
+ 
+ /* Affichage du code */
+ .article-content code {
+   background-color: rgba(255, 255, 255, 0.05);
+   padding: 0.2rem 0.4rem;
+   border-radius: 4px;
+   font-family: var(--font-geist-mono), monospace;
+   font-size: 0.9em;
+ }
+ 
+ .article-content pre {
+   background-color: rgba(255, 255, 255, 0.05);
+   padding: 1rem;
+   border-radius: 8px;
+   overflow: auto;
+   margin: 1.5rem 0;
+ }
+ 
+ .article-content pre code {
+   background-color: transparent;
+   padding: 0;
  }
  
  /* Tags */
@@ -183,7 +272,18 @@
    font-size: 1.25rem;
  }
  
- /* Articles liés */
+ /* État de chargement */
+ .loading {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 300px;
+   text-align: center;
+   font-size: 1.2rem;
+   color: #aaa;
+ }
+ 
+ /* Articles liés (à utiliser plus tard) */
  .related-articles {
    margin-top: 4rem;
    padding-top: 2rem;
@@ -218,13 +318,13 @@
  
  .related-image {
    width: 100%;
-   height: auto;
+   height: 160px;
    overflow: hidden;
  }
  
  .related-image img {
    width: 100%;
-   height: auto;
+   height: 100%;
    object-fit: cover;
    transition: transform 0.3s ease;
  }
@@ -252,29 +352,23 @@
    .article-container {
      padding: 2rem 1rem;
    }
- 
+   
    .header-top {
      flex-direction: row;
      align-items: center;
-     margin-top: 0px;
-     margin-bottom: 35px;
      gap: 1rem;
    }
- 
+   
    .back-button {
      padding: 0.5rem 1rem;
      font-size: 0.9rem;
    }
- 
+   
    .article-header h1 {
      font-size: 1.75rem;
      text-align: center;
    }
- 
-   .social-share {
-     gap: 3px;
-   }
- 
+   
    .article-content {
      font-size: 0.95rem;
    }
@@ -299,11 +393,11 @@
    .article-container {
      padding: 1.5rem 1rem;
    }
- 
+   
    .article-header h1 {
      font-size: 1.5rem;
    }
- 
+   
    .article-content {
      font-size: 0.9rem;
    }
