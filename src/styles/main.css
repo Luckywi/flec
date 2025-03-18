@@ -7,6 +7,7 @@
 @import url('pages/contact.css');
 @import url('pages/informations.css');
 @import url('pages/ressources.css');
+@import url('pages/article.css');
 
 body {
   font-family: 'Open Sans', Arial, sans-serif;

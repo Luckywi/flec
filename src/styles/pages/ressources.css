@@ -13,6 +13,7 @@
     transition: transform 0.3s ease;
 }
 
+
 .article-preview:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
@@ -62,8 +63,8 @@
 
 .article-content p {
     color: #888;
-    margin-bottom: 1.5rem;
     line-height: 1.6;
+    padding-bottom: 0px;
 }
 
 .read-more {
