@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import "@/styles/pages/article.css";
+import ArticleTocAccordion from "@/app/components/ArticleAccordion";
 
 export const metadata: Metadata = {
   title: "Nouvelle activité libérale : comment définir sa rémunération ? | Cabinet Franck Lebeurre",
@@ -9,14 +10,39 @@ export const metadata: Metadata = {
 };
 
 export default function RemunerationArticle() {
+  // Définir les tags de l'article
+  const articleTags = [
+    "Fiscalité", 
+    "Rémunération", 
+    "Profession libérale", 
+    "Création d'activité", 
+    "Optimisation"
+  ];
+
   return (
+    
     <main className="article-container">
+
+<ArticleTocAccordion />
+      {/* Bouton retour */}
+      <Link href="/sections/cabinet/ressources" className="back-button">
+        <i className="fas fa-arrow-left"></i> Retour aux ressources
+      </Link>
+
       <div className="article-header">
         <h1>Nouvelle activité libérale : comment définir sa rémunération ? Les conseils d&apos;un expert-comptable en 2025</h1>
         <div className="article-meta">
           <span className="article-date">Publié le 15 mars 2025</span>
           <span className="article-category">Fiscalité & Rémunération</span>
         </div>
+
+        {/* Tags d'article */}
+        <div className="article-tags">
+          {articleTags.map((tag, index) => (
+            <span key={index} className="article-tag">{tag}</span>
+          ))}
+        </div>
+
         <div className="article-video">
           <iframe
             src="https://www.youtube.com/embed/VzZ-DZ64-xY"
@@ -33,13 +59,13 @@ export default function RemunerationArticle() {
         <ul>
           <li><a href="#introduction">Introduction</a></li>
           <li><a href="#bases-remuneration">Les bases de la rémunération en activité libérale</a></li>
-          <li><a href="#remuneration-optimale">Déterminer sa rémunération optimale en début d&apos;activité</a></li>
-          <li><a href="#statut-juridique">Impact du choix du statut juridique sur votre rémunération</a></li>
-          <li><a href="#optimisation-fiscale">Stratégies d&apos;optimisation fiscale pour les nouveaux libéraux</a></li>
-          <li><a href="#protection-sociale">Construire une protection sociale solide dès le départ</a></li>
-          <li><a href="#planification-financiere">Planification financière à court et long terme</a></li>
-          <li><a href="#erreurs-eviter">Les erreurs à éviter lors du lancement</a></li>
-          <li><a href="#faq">FAQ : Rémunération en début d&apos;activité libérale</a></li>
+          <li><a href="#remuneration-optimale">Déterminer sa rémunération optimale</a></li>
+          <li><a href="#statut-juridique">Impact du statut juridique</a></li>
+          <li><a href="#optimisation-fiscale">Stratégies d&apos;optimisation fiscale</a></li>
+          <li><a href="#protection-sociale">Protection sociale solide</a></li>
+          <li><a href="#planification-financiere">Planification financière</a></li>
+          <li><a href="#erreurs-eviter">Erreurs à éviter</a></li>
+          <li><a href="#faq">FAQ</a></li>
           <li><a href="#conclusion">Conclusion</a></li>
         </ul>
       </div>
@@ -350,7 +376,6 @@ export default function RemunerationArticle() {
       </div>
 
       <div className="article-cta">
-        <p>Besoin d&apos;un accompagnement personnalisé pour le lancement de votre activité libérale ? Prenez rendez-vous pour une consultation initiale et découvrez comment optimiser votre situation dès le départ.</p>
         <Link href="/sections/autres/rdv" className="cta-button">
           Prendre rendez-vous<i className="far fa-calendar-alt"></i>
         </Link>
