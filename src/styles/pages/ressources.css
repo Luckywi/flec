@@ -1,131 +1,242 @@
-/* Styles pour les cartes d'articles */
-.articles-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 2rem;
-    padding: 2rem 3rem;
+/* Styles pour les cartes d'articles - Nouveau design FL */
+
+/* Container principal des articles */
+.fl-articles-container {
+  padding: 30px 0;
+  margin: 40px;
+  box-sizing: border-box;
+}
+
+.fl-articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+
+/* Card design */
+.fl-article-card {
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.fl-article-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* En-tête de la carte */
+.fl-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+}
+
+.fl-card-date {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.fl-card-category {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+/* Titre de l'article */
+.fl-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1.25rem;
+  color: #fff;
+  border: none;
+  padding: 0;
+}
+
+.fl-card-title::after,
+.fl-card-title::before {
+  display: none;
+}
+
+/* Tags */
+.fl-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+  height: 50px;
+}
+
+.fl-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 7px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  letter-spacing: 0.05em;
+  height: fit-content;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Extrait de l'article */
+.fl-card-excerpt {
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  flex-grow: 1;
+  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Lien "Lire l'article" */
+.fl-card-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.fl-card-link i {
+  margin-left: 0.75rem;
+  transition: transform 0.2s ease;
+}
+
+.fl-card-link:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.fl-card-link:hover i {
+  transform: translateX(5px);
+}
+
+/* Adaptations pour écrans moyens */
+@media screen and (max-width: 1024px) {
+  .fl-articles-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 0 1.5rem;
   }
   
-  .article-card {
-    background-color: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .article-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-    border-color: rgba(255, 255, 255, 0.2);
-  }
-  
-  .article-content {
+  .fl-article-card {
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  }
+}
+
+/* Adaptations pour tablettes */
+@media screen and (max-width: 768px) {
+
+  .fl-articles-container {
+    padding: 20px 0;
+    margin: 0px;
+    width: 100%;
   }
   
-  .article-metadata {
-    display: flex;
-    justify-content: space-between;
+  .fl-articles-grid {
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+  
+  .fl-card-title {
+    font-size: 1.3rem;
     margin-bottom: 1rem;
+  }
+  
+  .fl-card-tags {
+    min-height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .fl-card-excerpt {
+    margin-bottom: 1.5rem;
+  }
+  
+  .fl-card-link {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* Adaptations pour mobiles */
+@media screen and (max-width: 480px) {
+  .fl-articles-container {
+    padding: 15px 0;
+  }
+  
+  .fl-articles-grid {
+    padding: 0 1rem;
+    gap: 1.25rem;
+  }
+  
+  .fl-article-card {
+    padding: 1.25rem;
+  }
+  
+  .fl-card-header {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  .fl-card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .fl-card-tags {
+    gap: 0.4rem;
+    margin-bottom: 0.75rem;
+  }
+  
+  .fl-tag {
+    font-size: 0.65rem;
+    padding: 0.25rem 0.6rem;
+  }
+  
+  .fl-card-excerpt {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .fl-card-link {
+    padding: 0.5rem 1rem;
     font-size: 0.85rem;
   }
-  
-  .date, .category {
-    color: rgba(255, 255, 255, 0.6);
-  }
-  
-  .category {
-    font-weight: 500;
-  }
-  
-  .article-title {
-    font-size: 1.4rem;
-    line-height: 1.4;
-    margin-bottom: 1rem;
-    color: white;
-    min-height: 2.8rem;
-    height: auto;
-    overflow: visible;
-  }
-  
-  .article-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .article-tag {
-    font-size: 0.75rem;
-    padding: 0.25rem 0.75rem;
-    border-radius: 50px;
-    background-color: black !important;
-    color: white;
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    border: 1px solid white;
-  }
-  
-  .article-excerpt {
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    flex-grow: 1;
-  }
-  
-  .read-more {
-    display: inline-flex;
-    align-items: center;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-    margin-top: auto;
-    padding: 0.5rem 0;
-    width: fit-content;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease;
-  }
-  
-  .read-more i {
-    margin-left: 0.5rem;
-    transition: transform 0.2s ease;
-  }
-  
-  .read-more:hover {
-    border-bottom-color: white;
-  }
-  
-  .read-more:hover i {
-    transform: translateX(4px);
-  }
-  
-  /* Adaptations pour mobile */
-  @media screen and (max-width: 768px) {
-    .articles-grid {
-      grid-template-columns: 1fr;
-      padding: 1.5rem;
-      gap: 1.5rem;
-    }
-    
-    .article-title {
-      font-size: 1.2rem;
-      min-height: auto;
-      height: auto;
-      margin-bottom: 0.75rem;
-    }
-    
-    .article-content {
-      padding: 1.25rem;
-    }
-  }
+}

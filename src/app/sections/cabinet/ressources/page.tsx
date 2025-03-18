@@ -104,10 +104,12 @@ export default function Ressources() {
       </section>
 
       {/* Grille d'articles */}
-      <section className="articles-grid">
-        {articles.map((article) => (
-          <ArticleCard key={article.id} article={article} />
-        ))}
+      <section className="fl-articles-container">
+        <div className="fl-articles-grid">
+          {articles.map((article) => (
+            <ArticleCard key={article.id} article={article} />
+          ))}
+        </div>
       </section>
     </main>
   );
