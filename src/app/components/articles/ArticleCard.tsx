@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Article } from "@/app/data/articlesData";
-import "./ArticleCard.css";
 
 interface ArticleCardProps {
   article: Article;
@@ -18,7 +17,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
 
   return (
     <article className="article-preview">
-      <Link href={`/ressources/${article.slug}`} className="article-link">
+      <Link href={`ressources/${article.slug}`} className="article-link">
         <div className="article-image">
           <Image
             src={article.thumbnailUrl}

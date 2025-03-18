@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { Article } from "@/app/data/articlesData";
 import ArticleCard from "./ArticleCard";
-import "./ArticleList.css";
 
 interface ArticleListProps {
   articles: Article[];

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getArticleBySlug } from "@/app/data/articlesData";
-import RemunerationArticle from "@/app/data/articles/RemunerationArticle";
+import RemunerationArticle from "@/app/sections/cabinet/ressources/remuneration-activite-liberale";
 
 // Définissez tous les articles disponibles pour la génération statique
 export function generateStaticParams() {

@@ -6,7 +6,7 @@ import Image from "next/image";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
 import { Article } from "@/app/data/articlesData";
-import "@/app/components/articles/a";
+
 
 interface RemunerationArticleProps {
   article: Article;
@@ -18,8 +18,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
     return format(new Date(dateString), "d MMMM yyyy", { locale: fr });
   };
   
-  // ID de la vidéo YouTube
-  const youtubeVideoId = "VzZ-DZ64-xY";
+  // ID de la vidéo YouTub
 
   return (
     <div className="article-page">
@@ -27,7 +26,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
       <header className="article-header">
         <div className="container">
           <div className="article-meta">
-            <Link href="/ressources" className="back-button">
+            <Link href="/sections/cabinet/ressources" className="back-button">
               <i className="fas fa-arrow-left"></i> Retour aux ressources
             </Link>
             <time dateTime={article.date} className="article-date">
@@ -100,7 +99,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
           <p>Découvrez notre explication détaillée en vidéo sur ce sujet important :</p>
           <div className="video-container">
             <iframe
-              src={`https://www.youtube.com/embed/${youtubeVideoId}`}
+              src={`https://www.youtube.com/watch?v=VzZ-DZ64-xY`}
               title="Activité libérale : Comment définir sa rémunération ?"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -109,13 +108,13 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
         </div>
       </div>
       
-      {/* Contenu principal de l'article */}
+      {/* Contenu principal de l&apos;article */}
       <article className="article-content">
         <div className="container">
           <section id="introduction">
             <h2>Introduction</h2>
             <p>
-              Définir sa rémunération lorsqu'on exerce une <strong>profession libérale</strong> est une décision stratégique qui impacte non seulement 
+              Définir sa rémunération lorsqu&apos;on exerce une <strong>profession libérale</strong> est une décision stratégique qui impacte non seulement 
               votre quotidien financier, mais aussi la pérennité de votre activité et votre protection sociale. Que vous soyez médecin, avocat, 
               architecte, consultant ou tout autre <strong>professionnel libéral</strong>, ce guide vous accompagne dans la détermination de votre 
               rémunération idéale en 2025.
@@ -126,14 +125,14 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             <h2>Les spécificités de la rémunération en profession libérale</h2>
             
             <p>
-              Contrairement aux salariés, les <strong>professionnels libéraux</strong> bénéficient d'une grande liberté dans la fixation de leur 
-              rémunération, mais cette liberté s'accompagne de responsabilités particulières.
+              Contrairement aux salariés, les <strong>professionnels libéraux</strong> bénéficient d&apos;une grande liberté dans la fixation de leur 
+              rémunération, mais cette liberté s&apos;accompagne de responsabilités particulières.
             </p>
             
-            <h3>Différence entre chiffre d'affaires et rémunération</h3>
+            <h3>Différence entre chiffre d&apos;affaires et rémunération</h3>
             <p>
-              Le <strong>chiffre d'affaires</strong> (CA) généré par votre activité libérale n'est pas votre rémunération nette. 
-              Votre <strong>revenu professionnel</strong> est ce qui reste après déduction de l'ensemble des charges :
+              Le <strong>chiffre d&apos;affaires</strong> (CA) généré par votre activité libérale n&apos;est pas votre rémunération nette. 
+              Votre <strong>revenu professionnel</strong> est ce qui reste après déduction de l&apos;ensemble des charges :
             </p>
             
             <ul>
@@ -144,12 +143,12 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             
             <div className="info-box">
               <p>
-                <strong>Bon à savoir :</strong> En moyenne, les charges représentent entre 40% et 60% du chiffre d'affaires d'un professionnel 
-                libéral, selon le secteur d'activité.
+                <strong>Bon à savoir :</strong> En moyenne, les charges représentent entre 40% et 60% du chiffre d&apos;affaires d&apos;un professionnel 
+                libéral, selon le secteur d&apos;activité.
               </p>
             </div>
             
-            <h3>L'impact du régime fiscal</h3>
+            <h3>L&apos;impact du régime fiscal</h3>
             <p>
               Votre <strong>régime fiscal</strong> influence directement votre rémunération :
             </p>
@@ -180,8 +179,8 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             </p>
             <ul>
               <li>Aux <strong>tarifs pratiqués</strong> dans votre secteur</li>
-              <li>À votre niveau d'expertise et d'expérience</li>
-              <li>À votre zone géographique d'exercice</li>
+              <li>À votre niveau d&apos;expertise et d&apos;expérience</li>
+              <li>À votre zone géographique d&apos;exercice</li>
               <li>À la valeur ajoutée de vos services</li>
             </ul>
             
@@ -220,22 +219,22 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             <h3>Entreprise individuelle (EI)</h3>
             <ul>
               <li>Pas de distinction juridique entre patrimoine personnel et professionnel</li>
-              <li><strong>Imposition à l'IR</strong> dans la catégorie des BNC</li>
-              <li>Possibilité d'opter pour le <strong>versement libératoire</strong> en micro-BNC</li>
+              <li><strong>Imposition à l&apos;IR</strong> dans la catégorie des BNC</li>
+              <li>Possibilité d&apos;opter pour le <strong>versement libératoire</strong> en micro-BNC</li>
               <li>La totalité du bénéfice constitue votre rémunération imposable</li>
             </ul>
             
             <h3>EIRL (Entreprise Individuelle à Responsabilité Limitée)</h3>
             <ul>
-              <li>Protection du patrimoine personnel grâce au patrimoine d'affectation</li>
-              <li>Option possible pour l'<strong>impôt sur les sociétés (IS)</strong></li>
-              <li>En cas d'IS, possibilité de se verser un <strong>salaire déductible du résultat</strong></li>
+              <li>Protection du patrimoine personnel grâce au patrimoine d&apos;affectation</li>
+              <li>Option possible pour l&apos;<strong>impôt sur les sociétés (IS)</strong></li>
+              <li>En cas d&apos;IS, possibilité de se verser un <strong>salaire déductible du résultat</strong></li>
             </ul>
             
-            <h3>SELARL ou SELAS (société d'exercice libéral)</h3>
+            <h3>SELARL ou SELAS (société d&apos;exercice libéral)</h3>
             <ul>
               <li>Structure sociétaire adaptée aux professions réglementées</li>
-              <li>Imposition par défaut à l'IS</li>
+              <li>Imposition par défaut à l&apos;IS</li>
               <li><strong>Rémunération par salaire</strong> et/ou <strong>dividendes</strong></li>
               <li>Optimisation possible entre salaire (cotisations sociales plus élevées) et dividendes (fiscalité potentiellement avantageuse)</li>
             </ul>
@@ -246,7 +245,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             
             <h3>Arbitrage entre salaire et dividendes en SEL</h3>
             <p>
-              Si vous exercez en société d'exercice libéral, l'arbitrage entre <strong>salaire</strong> et <strong>dividendes</strong> est crucial :
+              Si vous exercez en société d&apos;exercice libéral, l&apos;arbitrage entre <strong>salaire</strong> et <strong>dividendes</strong> est crucial :
             </p>
             
             <div className="table-responsive">
@@ -270,7 +269,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
                     <td>
                       <ul>
                         <li>Charges sociales élevées (environ 80% du salaire brut)</li>
-                        <li>Imposition à l'IR (barème progressif)</li>
+                        <li>Imposition à l&apos;IR (barème progressif)</li>
                       </ul>
                     </td>
                   </tr>
@@ -279,7 +278,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
                     <td>
                       <ul>
                         <li>Charges sociales réduites (17,2% de CSG-CRDS)</li>
-                        <li>Possibilité d'abattement de 40% à l'IR</li>
+                        <li>Possibilité d&apos;abattement de 40% à l&apos;IR</li>
                       </ul>
                     </td>
                     <td>
@@ -296,7 +295,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             
             <div className="info-box">
               <p>
-                <strong>Conseil d'expert :</strong> Un mix optimal entre salaire et dividendes permet souvent de maximiser votre revenu net tout en 
+                <strong>Conseil d&apos;expert :</strong> Un mix optimal entre salaire et dividendes permet souvent de maximiser votre revenu net tout en 
                 maintenant une protection sociale adéquate.
               </p>
             </div>
@@ -337,7 +336,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             <ul>
               <li>Une <strong>mutuelle santé</strong> adaptée aux indépendants</li>
               <li>Une <strong>prévoyance complémentaire</strong> (incapacité, invalidité, décès)</li>
-              <li>Une <strong>assurance perte d'exploitation</strong></li>
+              <li>Une <strong>assurance perte d&apos;exploitation</strong></li>
               <li>Des <strong>contrats Madelin</strong> pour la retraite et la prévoyance</li>
             </ul>
           </section>
@@ -353,7 +352,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
               <li>Les périodes de forte activité et de creux</li>
               <li>Les échéances fiscales et sociales</li>
               <li>Les investissements futurs</li>
-              <li>La constitution d'une réserve de sécurité (idéalement 6 mois de charges fixes)</li>
+              <li>La constitution d&apos;une réserve de sécurité (idéalement 6 mois de charges fixes)</li>
             </ul>
             
             <h3>Prévoir la retraite dès maintenant</h3>
@@ -361,10 +360,10 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
               La <strong>retraite des professions libérales</strong> est souvent moins avantageuse que celle des salariés. Anticipez en :
             </p>
             <ul>
-              <li>Maximisant vos versements sur des <strong>plans d'épargne retraite</strong></li>
-              <li>Investissant dans l'<strong>immobilier locatif</strong></li>
+              <li>Maximisant vos versements sur des <strong>plans d&apos;épargne retraite</strong></li>
+              <li>Investissant dans l&apos;<strong>immobilier locatif</strong></li>
               <li>Diversifiant vos placements financiers</li>
-              <li>Valorisant votre cabinet/clientèle en vue d'une cession</li>
+              <li>Valorisant votre cabinet/clientèle en vue d&apos;une cession</li>
             </ul>
           </section>
 
@@ -388,9 +387,9 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             </div>
             
             <div className="error-box">
-              <h3>3. Confondre chiffre d'affaires et bénéfice</h3>
+              <h3>3. Confondre chiffre d&apos;affaires et bénéfice</h3>
               <p>
-                Le montant que vous pouvez vous verser est le <strong>bénéfice après impôts</strong>, pas le chiffre d'affaires ni même le bénéfice 
+                Le montant que vous pouvez vous verser est le <strong>bénéfice après impôts</strong>, pas le chiffre d&apos;affaires ni même le bénéfice 
                 avant impôts.
               </p>
             </div>
@@ -398,8 +397,8 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             <div className="error-box">
               <h3>4. Sous-estimer ses besoins en protection sociale</h3>
               <p>
-                Une <strong>couverture prévoyance adaptée</strong> est indispensable : en cas d'arrêt d'activité, vos charges continueront de courir 
-                tandis que vos revenus s'arrêteront.
+                Une <strong>couverture prévoyance adaptée</strong> est indispensable : en cas d&apos;arrêt d&apos;activité, vos charges continueront de courir 
+                tandis que vos revenus s&apos;arrêteront.
               </p>
             </div>
           </section>
@@ -418,7 +417,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             <div className="faq-item">
               <h3>Puis-je me verser un salaire fixe chaque mois en profession libérale ?</h3>
               <p>
-                En entreprise individuelle, vous ne vous versez pas techniquement un "salaire" mais des <strong>prélèvements personnels</strong>. Pour 
+                En entreprise individuelle, vous ne vous versez pas techniquement un &quot;salaire&quot; mais des <strong>prélèvements personnels</strong>. Pour 
                 plus de régularité, établissez un budget annuel et divisez-le en prélèvements mensuels constants.
               </p>
             </div>
@@ -429,15 +428,15 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
                 Plusieurs stratégies existent :
               </p>
               <ul>
-                <li>Opter pour une société à l'IS et optimiser l'arbitrage salaire/dividendes</li>
-                <li>Adhérer à une <strong>Association de Gestion Agréée</strong> (réduction d'impôt)</li>
+                <li>Opter pour une société à l&apos;IS et optimiser l&apos;arbitrage salaire/dividendes</li>
+                <li>Adhérer à une <strong>Association de Gestion Agréée</strong> (réduction d&apos;impôt)</li>
                 <li>Investir dans des contrats Madelin (déduction fiscale)</li>
                 <li>Optimiser vos frais professionnels réels</li>
               </ul>
             </div>
             
             <div className="faq-item">
-              <h3>Quel pourcentage du chiffre d'affaires puis-je me verser ?</h3>
+              <h3>Quel pourcentage du chiffre d&apos;affaires puis-je me verser ?</h3>
               <p>
                 Cela dépend entièrement de votre structure de coûts. En moyenne, les professionnels libéraux peuvent se verser entre 30% et 60% de 
                 leur CA en rémunération nette.
@@ -448,18 +447,18 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
           <section id="conclusion">
             <h2>Conclusion</h2>
             <p>
-              Définir sa <strong>rémunération en profession libérale</strong> est un exercice d'équilibre entre vos besoins personnels, la pérennité 
-              de votre activité et l'optimisation fiscale et sociale. Une approche méthodique et une révision régulière de votre stratégie vous 
+              Définir sa <strong>rémunération en profession libérale</strong> est un exercice d&apos;équilibre entre vos besoins personnels, la pérennité 
+              de votre activité et l&apos;optimisation fiscale et sociale. Une approche méthodique et une révision régulière de votre stratégie vous 
               permettront de sécuriser votre situation financière tout en développant sereinement votre cabinet.
             </p>
             
             <p>
-              Rappelons qu'une bonne gestion de la rémunération passe par l'anticipation et la planification. N'hésitez pas à consulter un 
+              Rappelons qu&apos;une bonne gestion de la rémunération passe par l&apos;anticipation et la planification. N&apos;hésitez pas à consulter un 
               <strong>expert-comptable spécialisé</strong> pour bénéficier de conseils personnalisés adaptés à votre situation spécifique.
             </p>
           </section>
           
-          {/* Footer de l'article */}
+          {/* Footer de l&apos;article */}
           <div className="article-footer">
             <p className="article-meta-footer">
               <em>Article rédigé par {article.author.name}, {article.author.title} spécialisé dans les professions libérales.</em><br />
@@ -467,7 +466,7 @@ export default function RemunerationArticle({ article }: RemunerationArticleProp
             </p>
             
             <div className="article-cta">
-              <h3>Besoin d'un accompagnement personnalisé ?</h3>
+              <h3>Besoin d&apos;un accompagnement personnalisé ?</h3>
               <Link href="/sections/autres/rdv" className="cta-button">
                 Prendre rendez-vous avec un expert<i className="far fa-calendar-alt"></i>
               </Link>

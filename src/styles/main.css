@@ -1,13 +1,15 @@
 /* Composants */
 @import url('components/header.css');
 @import url('components/footer.css');
+@import url('components/articleCard.css');
+@import url('components/articleList.css');
 
 /* Pages spécifiques */
 @import url('pages/home.css');
 @import url('pages/contact.css');
 @import url('pages/informations.css');
 @import url('pages/ressources.css');
-@import url('pages/articles.css');
+@import url('pages/articleContent.css');
 
 body {
   font-family: 'Open Sans', Arial, sans-serif;
