@@ -15,18 +15,18 @@ export interface Article {
   
   export const articles: Article[] = [
     {
-      slug: "remuneration-activite-liberale",
-      title: "Activité libérale : Comment définir sa rémunération ? Guide complet 2025",
-      excerpt: "Découvrez comment optimiser votre rémunération en tant que professionnel libéral et trouver le juste équilibre entre revenus immédiats et pérennité de votre activité.",
-      date: "2025-03-15",
-      thumbnailUrl: "/images/remuneration-profession-liberale-thumb.webp",
-      tags: ["Professions libérales", "Fiscalité", "Optimisation", "Rémunération"],
-      author: {
-        name: "Franck Lebeurre",
-        title: "Expert-comptable",
-        avatarUrl: "/images/franck.webp"
+        slug: "remuneration-activite-liberale",
+        title: "Activité libérale : Comment définir sa rémunération ? Guide complet 2025",
+        excerpt: "Découvrez comment optimiser votre rémunération en tant que professionnel libéral et trouver le juste équilibre entre revenus immédiats et pérennité de votre activité.",
+        date: "2025-03-15",
+        thumbnailUrl: "/images/fleur12.webp", // Utilisez une image existante
+        tags: ["Professions libérales", "Fiscalité", "Optimisation", "Rémunération"],
+        author: {
+          name: "Franck Lebeurre",
+          title: "Expert-comptable",
+          avatarUrl: "/images/franck.webp"
+        }
       }
-    }
     // Vous pourrez ajouter d'autres articles ici par la suite
   ];
   

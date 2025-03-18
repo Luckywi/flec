@@ -18,8 +18,14 @@ interface ArticlePageProps {
 }
 
 // Générer les métadonnées de page dynamiquement pour le SEO
-export async function generateMetadata({ params }: ArticlePageProps): Promise<Metadata> {
-  const article = getArticleBySlug(params.slug);
+export async function generateMetadata(
+  { params }: ArticlePageProps
+): Promise<Metadata> {
+  // Accédez directement au slug sans destruction
+  const slug = params?.slug;
+  
+  // Vérifier si l'article existe
+  const article = getArticleBySlug(slug);
   
   if (!article) {
     return {
@@ -56,8 +62,11 @@ export async function generateMetadata({ params }: ArticlePageProps): Promise<Me
   };
 }
 
-export default function ArticlePage({ params }: ArticlePageProps) {
-  const { slug } = params;
+export default async function ArticlePage(
+  { params }: ArticlePageProps
+) {
+  // Accédez directement au slug sans destruction
+  const slug = params?.slug;
   
   // Vérifier si l'article existe
   const article = getArticleBySlug(slug);
