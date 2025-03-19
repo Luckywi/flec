@@ -4,7 +4,7 @@ import "@/styles/pages/article.css";
 import ArticleTocAccordion from "@/app/components/ArticleAccordion";
 
 export const metadata: Metadata = {
-  title: "Nouvelle activité libérale : comment définir sa rémunération ? | Cabinet Franck Lebeurre",
+  title: "Nouvelle activité libérale : les conseils d'un expert-comptable ! | Cabinet Franck Lebeurre",
   description: "Guide complet par un expert-comptable sur la définition de votre rémunération lors du lancement d&apos;une activité libérale en 2025. Stratégies, optimisation fiscale et conseils pratiques.",
   keywords: "rémunération profession libérale, nouvelle activité libérale, expert-comptable, optimisation fiscale, protection sociale indépendant, statut juridique profession libérale",
 };
