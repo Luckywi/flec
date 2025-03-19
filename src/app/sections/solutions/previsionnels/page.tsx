@@ -3,8 +3,9 @@ import Link from "next/link";
 import SolutionsNav from "@/app/components/SolutionsNav";
 
 export const metadata: Metadata = {
-  title: "Expert-Comptable Professions Libérales | Cabinet Franck Lebeurre | Conseil & Accompagnement",
-  description: "Expert-comptable spécialisé professions libérales : conseil fiscal personnalisé, optimisation comptable, accompagnement dédié dès 62€/mois. Plus de 250 professionnels libéraux nous font confiance.",
+  title: "Prévisionnels Financiers | Projections & Stratégie | Cabinet Franck Lebeurre",
+  description: "Prévisions financières précises et actualisées pour votre activité : projections à 6 mois, suivi semestriel, ajustements stratégiques anticipés. Visibilité optimale pour vos décisions d'entreprise.",
+  keywords: "prévisionnel financier, projection trésorerie, vision stratégique, business plan, expertise comptable prévisionnelle",
 };
 
 export default function ProfessionsLiberales() {

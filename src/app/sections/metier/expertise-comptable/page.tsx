@@ -3,9 +3,11 @@ import ServiceNav from "@/app/components/MetierNav";
 import Accordion from "@/app/components/Accordion";
 
 export const metadata: Metadata = {
-  title: "Expertise Comptable | Solutions Digitales & Accompagnement Personnalisé",
+  title: "Expertise Comptable | Solutions Digitales & Accompagnement Personnalisé | Cabinet Franck Lebeurre",
   description: "Cabinet d'expertise comptable 100% digital : accompagnement à distance, outils connectés, conseil stratégique et suivi personnalisé. Solutions adaptées à votre activité dès 62€/mois.",
+  keywords: "expertise comptable, outils digitaux, conseil comptable, accompagnement entreprise, cabinet digital",
 };
+
 
 export default function ExpertiseComptable() {
   const accordionItems = [

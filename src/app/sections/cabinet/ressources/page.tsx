@@ -6,6 +6,7 @@ import ArticleCard, { Article, ArticleTag } from "@/app/components/ArticleCard";
 export const metadata: Metadata = {
   title: "Ressources et Articles | Cabinet Franck Lebeurre | Expertise Comptable",
   description: "Découvrez nos ressources, articles et conseils pratiques sur la comptabilité, la fiscalité et la gestion de patrimoine. Des informations précieuses pour les professions libérales et entrepreneurs.",
+  keywords: "articles expertise comptable, ressources fiscales, conseils comptables, guide professions libérales, informations fiscalité",
 };
 
 // Données des tags

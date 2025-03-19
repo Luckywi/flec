@@ -5,7 +5,9 @@ import Accordion from "@/app/components/Accordion";
 export const metadata: Metadata = {
   title: "Gestion de Patrimoine| Cabinet Franck Lebeurre | Conseil Patrimonial",
   description: "Expert-comptable spécialisé en gestion de patrimoine : conseil en transmission d'entreprise, optimisation fiscale et planification patrimoniale. Expertise pluridisciplinaire pour votre patrimoine professionnel et personnel.",
+  keywords: "gestion patrimoine, conseil patrimonial, transmission entreprise, optimisation fiscale patrimoine, expert-comptable patrimoine",
 };
+
 
 export default function GestionPatrimoine() {
   // Contenu de l'accordéon

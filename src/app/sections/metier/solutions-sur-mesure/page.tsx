@@ -5,6 +5,7 @@ import Accordion from "@/app/components/Accordion";
 export const metadata: Metadata = {
   title: "Solutions Comptables Sur Mesure | Création et Suivi d'Entreprise | Cabinet Franck Lebeurre",
   description: "Solutions d'expertise comptable personnalisées pour créateurs d'entreprise : accompagnement à la création, choix du statut juridique, prévisionnel sur 3 ans, suivi d'activité et optimisation fiscale.",
+  keywords: "solutions comptables personnalisées, création entreprise, statut juridique, prévisionnel financier, optimisation fiscale entreprise",
 };
 
 export default function SolutionsSurMesure() {

@@ -6,6 +6,7 @@ import Accordion from "@/app/components/Accordion";
 export const metadata: Metadata = {
   title: "Expert-Comptable Professions Libérales | Cabinet Franck Lebeurre | Conseil & Accompagnement",
   description: "Expert-comptable spécialisé professions libérales : conseil fiscal personnalisé, optimisation comptable, accompagnement dédié dès 62€/mois. Plus de 250 professionnels libéraux nous font confiance.",
+  keywords: "expert-comptable professions libérales, comptabilité libérale, fiscalité profession libérale, optimisation BNC, accompagnement libéral",
 };
 
 export default function ProfessionsLiberales() {

@@ -3,10 +3,11 @@ import { Suspense } from "react";
 import RdvFormClient from "./RdvFormClient";
 
 export const metadata: Metadata = {
-  title: "Prenez Rendez-vous Gratuitement | Analyse Offerte | Cabinet Franck Lebeurre",
-  description: "Obtenez une analyse gratuite de votre situation par un expert-comptable en 24h. Rendez-vous en visioconférence, analyse personnalisée et débriefing téléphonique. Accompagnement sur mesure pour votre activité.",
-};
-
+    title: "Prenez Rendez-vous Gratuitement | Analyse Offerte | Cabinet Franck Lebeurre",
+    description: "Obtenez une analyse gratuite de votre situation par un expert-comptable en 24h. Rendez-vous en visioconférence, analyse personnalisée et débriefing téléphonique. Accompagnement sur mesure pour votre activité.",
+    keywords: "rendez-vous expert-comptable, analyse comptable gratuite, consultation comptable, visioconférence expert-comptable, premier contact cabinet comptable",
+  };
+  
 export default function RDV() {
   return (
     <main>

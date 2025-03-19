@@ -3,8 +3,9 @@ import Link from "next/link";
 import SolutionsNav from "@/app/components/SolutionsNav";
 
 export const metadata: Metadata = {
-  title: "Expert-Comptable Professions Libérales | Cabinet Franck Lebeurre | Conseil & Accompagnement",
-  description: "Expert-comptable spécialisé professions libérales : conseil fiscal personnalisé, optimisation comptable, accompagnement dédié dès 62€/mois. Plus de 250 professionnels libéraux nous font confiance.",
+  title: "Solutions Cloud Comptabilité | Digitalisation & Accessibilité | Cabinet Franck Lebeurre",
+  description: "Digitalisation de votre comptabilité : accès sécurisé à vos données comptables depuis n'importe quel appareil. Échange facilité de documents et collaboration à distance avec votre expert-comptable.",
+  keywords: "comptabilité cloud, digitalisation cabinet comptable, accès données comptables, collaboration à distance, documents numériques",
 };
 
 export default function ProfessionsLiberales() {

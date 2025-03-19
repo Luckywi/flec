@@ -3,8 +3,9 @@ import Link from "next/link";
 import SolutionsNav from "@/app/components/SolutionsNav";
 
 export const metadata: Metadata = {
-  title: "Expert-Comptable Professions Libérales | Cabinet Franck Lebeurre | Conseil & Accompagnement",
-  description: "Expert-comptable spécialisé professions libérales : conseil fiscal personnalisé, optimisation comptable, accompagnement dédié dès 62€/mois. Plus de 250 professionnels libéraux nous font confiance.",
+  title: "Optimisation Fiscale & Sociale | Stratégies Légales | Cabinet Franck Lebeurre",
+  description: "Stratégies d'optimisation fiscale et sociale légales pour entrepreneurs et professions libérales. Réduisez vos charges et impôts tout en respectant la législation pour développer sereinement votre activité.",
+  keywords: "optimisation fiscale, stratégie fiscale légale, réduction charges sociales, conseil fiscal, expert-comptable fiscalité",
 };
 
 export default function ProfessionsLiberales() {

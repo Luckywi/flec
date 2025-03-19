@@ -3,9 +3,10 @@ import Link from "next/link";
 import CabinetNav from "@/app/components/CabinetNav";
 
 export const metadata: Metadata = {
-  title: "Cabinet d'Expertise Comptable Spécialiste Santé | Franck Lebeurre",
-  description: "Cabinet d'expertise comptable spécialisé dans l'accompagnement des professionnels de santé. Une approche personnalisée et digitale pour les petites structures. Solutions adaptées aux professions libérales et médicales.",
-};
+    title: "Cabinet d'Expertise Comptable Spécialiste Santé | Franck Lebeurre",
+    description: "Cabinet d'expertise comptable spécialisé dans l'accompagnement des professionnels de santé. Une approche personnalisée et digitale pour les petites structures. Solutions adaptées aux professions libérales et médicales.",
+    keywords: "expertise comptable santé, comptabilité professionnels santé, expert-comptable médical, fiscalité médicale, cabinet comptable digital",
+  };
 
 export default function Presentation() {
   return (

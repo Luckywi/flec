@@ -3,8 +3,9 @@ import Link from "next/link";
 import SolutionsNav from "@/app/components/SolutionsNav";
 
 export const metadata: Metadata = {
-  title: "Expert-Comptable Professions Libérales | Cabinet Franck Lebeurre | Conseil & Accompagnement",
-  description: "Expert-comptable spécialisé professions libérales : conseil fiscal personnalisé, optimisation comptable, accompagnement dédié dès 62€/mois. Plus de 250 professionnels libéraux nous font confiance.",
+  title: "Modulation Fiscale et Sociale | Gestion Optimisée des Charges | Cabinet Franck Lebeurre",
+  description: "Évitez les régularisations importantes d'impôts et de charges sociales grâce à nos solutions de modulation. Acomptes provisionnels ajustés pour une trésorerie maîtrisée et sans mauvaises surprises.",
+  keywords: "modulation fiscale, acomptes provisionnels, charges sociales, gestion trésorerie, régularisation impôts",
 };
 
 export default function ProfessionsLiberales() {

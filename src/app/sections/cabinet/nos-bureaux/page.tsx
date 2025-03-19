@@ -4,9 +4,10 @@ import Image from "next/image";
 import CabinetNav from "@/app/components/CabinetNav";
 
 export const metadata: Metadata = {
-  title: "Cabinet d'Expertise Comptable à Mâcon | Bureaux & Couverture Nationale | Franck Lebeurre",
-  description: "Cabinet d'expertise comptable basé à Mâcon avec rayonnement national : proximité locale et services digitaux à distance, présence en France métropolitaine et DOM. Rendez-vous possibles près de Lyon et Bourg-en-Bresse.",
-};
+    title: "Cabinet d'Expertise Comptable à Mâcon | Bureaux & Couverture Nationale | Franck Lebeurre",
+    description: "Cabinet d'expertise comptable basé à Mâcon avec rayonnement national : proximité locale et services digitaux à distance, présence en France métropolitaine et DOM. Rendez-vous possibles près de Lyon et Bourg-en-Bresse.",
+    keywords: "cabinet expertise comptable Mâcon, expert-comptable Lyon, comptable Bourg-en-Bresse, couverture nationale comptable, expertise comptable à distance",
+  };
 
 export default function NosBureaux() {
   return (

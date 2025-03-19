@@ -1,4 +1,14 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+
+
+export const metadata: Metadata = {
+  title: "Cabinet d'Expertise Comptable Franck Lebeurre | Expert-Comptable Mâcon",
+  description: "Cabinet d'expertise comptable spécialisé dans l'accompagnement des professions libérales et entrepreneurs. Solutions personnalisées, conseils fiscaux et suivi digital à partir de 62€/mois. Basé à Mâcon avec couverture nationale.",
+  keywords: "expert-comptable, professions libérales, expertise comptable Mâcon, fiscalité, optimisation fiscale, comptabilité digitale",
+};
+
 
 export default function Home() {
   return (
