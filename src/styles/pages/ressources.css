@@ -134,10 +134,6 @@
   transition: transform 0.2s ease;
 }
 
-.fl-card-link:hover {
-  background-color: #fff;
-  color: #000;
-}
 
 .fl-card-link:hover i {
   transform: translateX(5px);

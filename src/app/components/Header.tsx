@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import "@/styles/main.css";
+import HeaderMobileMenu from './HeaderMobileMenu';
 
 const Header = () => {
   return (
@@ -50,67 +51,8 @@ const Header = () => {
         </nav>
       </header>
 
-      {/* Header pour mobile */}
-      <header className="menu-bar">
-        <input className="dropdown" type="checkbox" id="dropdown" name="dropdown" />
-        <div className="header-content">
-          <label className="menu-toggle" htmlFor="dropdown">
-            <i className="fas fa-bars"></i>
-          </label>
-          <Link className="title" href="/">
-            <h1>FRANCK LEBEURRE</h1>
-            <p>EXPERT-COMPTABLE</p>
-          </Link>
-        </div>
-        <div className="dropdown-content">
-          <div>
-            <input className="dropdown-sub" type="checkbox" id="uno" name="uno" />
-            <label className="for-dropdown-sub" htmlFor="uno">
-              <span>Le cabinet<i className="fas fa-chevron-down"></i></span>
-            </label>
-            <div className="section-dropdown-sub">
-              <Link href="/sections/cabinet/presentation">Présentation</Link>
-              <Link href="/sections/cabinet/nos-bureaux">Nos bureaux</Link>
-              <Link href="/sections/cabinet/notre-equipe">Notre équipe</Link>
-              <Link href="/sections/cabinet/ressources">Ressources</Link>
-            </div>
-          </div>
-          <div>
-            <input className="dropdown-sub" type="checkbox" id="duo" name="duo" />
-            <label className="for-dropdown-sub" htmlFor="duo">
-              <span>Notre métier<i className="fas fa-chevron-down"></i></span>
-            </label>
-            <div className="section-dropdown-sub">
-              <Link href="/sections/metier/expertise-comptable">Expertise comptable</Link>
-              <Link href="/sections/metier/solutions-sur-mesure">Solutions sur mesure</Link>
-              <Link href="/sections/metier/professions-liberales">Professions libérales</Link>
-              <Link href="/sections/metier/gestion-de-patrimoine">Gestion de patrimoine</Link>
-            </div>
-          </div>
-          <div>
-            <input className="dropdown-sub" type="checkbox" id="tres" name="tres" />
-            <label className="for-dropdown-sub" htmlFor="tres">
-              <span>Nos solutions<i className="fas fa-chevron-down"></i></span>
-            </label>
-            <div className="section-dropdown-sub">
-              <Link href="/sections/solutions/cloud">Cloud</Link>
-              <Link href="/sections/solutions/saisie-des-donnes">Saisie des données</Link>
-              <Link href="/sections/solutions/previsionnels">Prévisionnels</Link>
-              <Link href="/sections/solutions/modulation">Modulation</Link>
-              <Link href="/sections/solutions/optimisation">Optimisation</Link>
-              <Link href="/sections/solutions/web-master">Web master</Link>
-            </div>
-          </div>
-          <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <Link 
-              style={{ border: '2px solid white', borderRadius: '10px', marginRight: '30px' }}
-              href="/sections/autres/rdv"
-            >
-              Se faire appeler<i className="fas fa-phone"></i>
-            </Link>
-          </div>
-        </div>
-      </header>
+      {/* Header pour mobile - Utilise le composant client */}
+      <HeaderMobileMenu />
     </>
   );
 };
