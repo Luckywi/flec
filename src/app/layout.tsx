@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SchemaOrg from "./components/SchemaOrg"; 
 import "@/styles/main.css";
 
 // Style pour garantir que les polices Next.js sont disponibles sans perturber les styles existants
@@ -43,6 +44,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16" />
         <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.webp" sizes="180x180" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
+        <SchemaOrg />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />

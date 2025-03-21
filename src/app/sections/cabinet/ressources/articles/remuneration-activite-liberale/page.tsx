@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Link from "next/link";
 import "@/styles/pages/article.css";
 import ArticleTocAccordion from "@/app/components/ArticleAccordion";
+import RemunerationArticleSchema from "./RemunerationArticleSchema";
 
 export const metadata: Metadata = {
   title: "Nouvelle activité libérale : les conseils d'un expert-comptable ! | Cabinet Franck Lebeurre",
@@ -22,6 +23,7 @@ export default function RemunerationArticle() {
   return (
     
     <main className="article-container">
+        <RemunerationArticleSchema />
 
 <ArticleTocAccordion />
       {/* Bouton retour */}
