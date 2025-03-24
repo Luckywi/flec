@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Modulation Fiscale et Sociale | Gestion Optimisée des Charges | Cabinet Franck Lebeurre",
   description: "Évitez les régularisations importantes d'impôts et de charges sociales grâce à nos solutions de modulation. Acomptes provisionnels ajustés pour une trésorerie maîtrisée et sans mauvaises surprises.",
   keywords: "modulation fiscale, acomptes provisionnels, charges sociales, gestion trésorerie, régularisation impôts",
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/solutions/modulation-charges',
+  },
 };
 
 export default function ProfessionsLiberales() {

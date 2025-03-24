@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Optimisation Fiscale & Sociale | Stratégies Légales | Cabinet Franck Lebeurre",
   description: "Stratégies d'optimisation fiscale et sociale légales pour entrepreneurs et professions libérales. Réduisez vos charges et impôts tout en respectant la législation pour développer sereinement votre activité.",
   keywords: "optimisation fiscale, stratégie fiscale légale, réduction charges sociales, conseil fiscal, expert-comptable fiscalité",
+  alternates: {
+    canonical: 'http://francklebeurre-expertise.fr/solutions/optimisation-fiscale',
+  },
 };
 
 export default function ProfessionsLiberales() {

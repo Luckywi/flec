@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "Économisez sur vos frais bancaires en libéral ! | Cabinet Franck Lebeurre",
   description: "Découvrez comment économiser sur vos frais bancaires en profession libérale. Compte personnel vs compte professionnel, obligations légales et astuces pour réduire vos coûts bancaires.",
   keywords: "frais bancaires professionnel libéral, compte dédié libéral, compte professionnel obligation, économie frais bancaires, banque profession libérale, expert-comptable",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/articles/economiser-frais-bancaires-liberal',
+  },  
 };
 
 export default function FraisBancairesArticle() {
@@ -24,7 +28,7 @@ export default function FraisBancairesArticle() {
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
-      <Link href="/sections/cabinet/ressources" className="back-button">
+      <Link href="/ressources" className="back-button">
         <i className="fas fa-arrow-left"></i> Retour aux ressources
       </Link>
 

@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "Solutions Webmarketing | Visibilité En Ligne | Cabinet Franck Lebeurre",
   description: "Développez votre activité grâce à nos solutions webmarketing : création de sites web, référencement optimisé et campagnes sur réseaux sociaux. Stratégies digitales spécifiques pour professions libérales et commerces.",
   keywords: "webmarketing professions libérales, création site web, référencement, réseaux sociaux, stratégie digitale",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/solutions/web-marketing',
+  },
 };
 
 export default function ProfessionsLiberales() {

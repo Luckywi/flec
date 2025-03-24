@@ -6,6 +6,10 @@ export const metadata: Metadata = {
     title: "Cabinet d'Expertise Comptable Spécialiste Santé | Franck Lebeurre",
     description: "Cabinet d'expertise comptable spécialisé dans l'accompagnement des professionnels de santé. Une approche personnalisée et digitale pour les petites structures. Solutions adaptées aux professions libérales et médicales.",
     keywords: "expertise comptable santé, comptabilité professionnels santé, expert-comptable médical, fiscalité médicale, cabinet comptable digital",
+
+    alternates: {
+      canonical: 'https://www.francklebeurre-expertise.fr/cabinet/presentation',
+    },  
   };
 
 export default function Presentation() {

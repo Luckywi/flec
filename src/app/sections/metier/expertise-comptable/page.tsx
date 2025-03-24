@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Expertise Comptable | Solutions Digitales & Accompagnement Personnalisé | Cabinet Franck Lebeurre",
   description: "Cabinet d'expertise comptable 100% digital : accompagnement à distance, outils connectés, conseil stratégique et suivi personnalisé. Solutions adaptées à votre activité dès 62€/mois.",
   keywords: "expertise comptable, outils digitaux, conseil comptable, accompagnement entreprise, cabinet digital",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/expertise-comptable',
+  },
+  
 };
 
 

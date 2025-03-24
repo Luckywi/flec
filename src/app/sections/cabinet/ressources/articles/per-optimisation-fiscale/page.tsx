@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "Le PER, une solution d'optimisation fiscale efficace ? | Cabinet Franck Lebeurre",
   description: "Analyse complète par un expert-comptable du Plan d'Épargne Retraite comme outil d'optimisation fiscale pour 2025. Avantages, inconvénients et stratégies d'utilisation.",
   keywords: "PER plan épargne retraite, optimisation fiscale, réduction impôts, préparation retraite, fiscalité PER, expert-comptable, comparatif PER, stratégie patrimoniale",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/articles/per-optimisation-fiscale',
+  },  
 };
 
 export default function PERArticle() {
@@ -25,7 +29,7 @@ export default function PERArticle() {
 
       <ArticleTocAccordion />
       {/* Bouton retour */}
-      <Link href="/sections/cabinet/ressources" className="back-button">
+      <Link href="/ressources" className="back-button">
         <i className="fas fa-arrow-left"></i> Retour aux ressources
       </Link>
 

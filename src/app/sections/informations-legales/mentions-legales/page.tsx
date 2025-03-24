@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "Mentions Légales | Cabinet Franck Lebeurre",
   description: "Mentions légales du cabinet d'expertise comptable Franck Lebeurre : informations légales, propriété intellectuelle et conditions d'utilisation.",
   robots: "noindex, follow",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/mentions-legales',
+  },
+  
 };
 
 export default function MentionsLegales() {

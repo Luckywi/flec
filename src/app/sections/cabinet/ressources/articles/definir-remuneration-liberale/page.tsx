@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "Activité libérale : Comment définir sa rémunération ? | Cabinet Franck Lebeurre",
   description: "Guide expert pour définir une rémunération optimale en activité libérale. Conseils pour déterminer le bon montant, stratégies d'optimisation fiscale et sociale, analyse du point d'équilibre.",
   keywords: "rémunération profession libérale, salaire activité libérale, prélèvements indépendant, optimisation fiscale libéral, charges sociales profession libérale, expert-comptable, trésorerie",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/articles/definir-remuneration-liberale',
+  },  
 };
 
 export default function RemunerationLiberaleArticle() {
@@ -24,7 +28,7 @@ export default function RemunerationLiberaleArticle() {
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
-      <Link href="/sections/cabinet/ressources" className="back-button">
+      <Link href="/ressources" className="back-button">
         <i className="fas fa-arrow-left"></i> Retour aux ressources
       </Link>
 

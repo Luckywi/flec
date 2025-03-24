@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "Conditions Générales d'Utilisation | Cabinet Franck Lebeurre",
   description: "Conditions Générales d'Utilisation du site francklebeurre-expertise.fr : modalités d'utilisation, propriété intellectuelle, protection des données et conditions d'accès.",
   robots: "noindex, follow",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/conditions-utilisation',
+  },
+  
 };
 
 export default function CGU() {

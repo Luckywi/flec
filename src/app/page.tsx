@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: "Cabinet d'Expertise Comptable Franck Lebeurre | Expert-Comptable Mâcon",
   description: "Cabinet d'expertise comptable spécialisé dans l'accompagnement des professions libérales et entrepreneurs. Solutions personnalisées, conseils fiscaux et suivi digital à partir de 62€/mois. Basé à Mâcon avec couverture nationale.",
   keywords: "expert-comptable, professions libérales, expertise comptable Mâcon, fiscalité, optimisation fiscale, comptabilité digitale",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/',
+  },
+
 };
 
 
@@ -55,7 +60,7 @@ export default function Home() {
             <p>
               Forts de nos principes déontologiques, notre mission consiste à vous aider pour assurer la pérennité de votre
               activité.<br />
-              <Link href="/sections/metier/expertise-comptable" className="learn-more">En savoir plus <i
+              <Link href="/expertise-comptable" className="learn-more">En savoir plus <i
                 className="fas fa-chevron-right"></i></Link><br />
             </p>
           </div>
@@ -70,7 +75,7 @@ export default function Home() {
           <div className="accordion-content">
             <p>
               Nous comprenons les enjeux des professions libérales et offrons des services spécialisés pour répondre à leurs
-              besoins spécifiques.<br /> <Link href="/sections/metier/professions-liberales" className="learn-more">En
+              besoins spécifiques.<br /> <Link href="/professions-liberales" className="learn-more">En
                 savoir plus <i className="fas fa-chevron-right"></i></Link><br />
             </p>
           </div>
@@ -86,7 +91,7 @@ export default function Home() {
             <p>
               Nous vous aidons à vous orienter dans un environnement législatif complexe avec des solutions sur mesure
               adaptées à votre entreprise ou à votre situation personnelle.<br />
-              <Link href="/sections/metier/solutions-sur-mesure" className="learn-more">En savoir plus <i
+              <Link href="/solutions-sur-mesure" className="learn-more">En savoir plus <i
                 className="fas fa-chevron-right"></i></Link><br />
             </p>
           </div>
@@ -101,7 +106,7 @@ export default function Home() {
           <div className="accordion-content">
             <p>
               Nous vous accompagnons dans l&apos;optimisation et la valorisation de votre patrimoine pour assurer votre sécurité
-              financière à long terme.<br /><Link href="/sections/metier/gestion-de-patrimoine"
+              financière à long terme.<br /><Link href="/gestion-de-patrimoine"
                 className="learn-more">En savoir plus <i className="fas fa-chevron-right"></i></Link><br />
             </p>
           </div>
@@ -114,28 +119,28 @@ export default function Home() {
           <h2>Expertise comptable</h2>
           <p>Forts de nos principes déontologiques, notre mission consiste à vous aider pour assurer la pérennité de votre
             activité.</p>
-          <Link href="/sections/metier/expertise-comptable" className="learn-more mobile-delete">En savoir plus <i
+          <Link href="/expertise-comptable" className="learn-more mobile-delete">En savoir plus <i
             className="fas fa-chevron-right"></i></Link>
         </div>
         <div className="service-2">
           <h2>Accompagnement des professions libérales</h2>
           <p>Nous comprenons les enjeux des professions libérales et offrons des services spécialisés pour répondre à leurs
             besoins spécifiques.</p>
-          <Link href="/sections/metier/professions-liberales" className="learn-more mobile-delete">En savoir plus
+          <Link href="/professions-liberales" className="learn-more mobile-delete">En savoir plus
             <i className="fas fa-chevron-right"></i></Link>
         </div>
         <div className="service-2">
           <h2>Solutions sur mesure</h2>
           <p>Nous vous aidons à vous orienter dans un environnement législatif complexe avec des solutions sur mesure
             adaptées à votre entreprise ou à votre situation personnelle.</p>
-          <Link href="/sections/metier/solutions-sur-mesure" className="learn-more mobile-delete">En savoir plus
+          <Link href="/solutions-sur-mesure" className="learn-more mobile-delete">En savoir plus
             <i className="fas fa-chevron-right"></i></Link>
         </div>
         <div className="service-2">
           <h2>Gestion de patrimoine</h2>
           <p>Nous vous accompagnons dans l&apos;optimisation et la valorisation de votre patrimoine pour assurer votre sécurité
             financière à long terme.</p>
-          <Link href="/sections/metier/gestion-de-patrimoine" className="learn-more mobile-delete">En savoir plus
+          <Link href="/gestion-de-patrimoine" className="learn-more mobile-delete">En savoir plus
             <i className="fas fa-chevron-right"></i></Link>
         </div>
       </section>

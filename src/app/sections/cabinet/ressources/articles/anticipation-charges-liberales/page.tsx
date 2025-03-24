@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "Professions libérales : anticipez vos charges dès le départ ! | Cabinet Franck Lebeurre",
   description: "Guide complet pour anticiper et gérer efficacement vos charges sociales et fiscales en tant que profession libérale. Conseils d'expert-comptable pour une gestion sereine de votre trésorerie.",
   keywords: "charges professions libérales, URSSAF indépendants, charges sociales, fiscalité libérale, trésorerie profession libérale, gestion charges, expert-comptable",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/articles/anticipation-charges-liberales',
+  },  
 };
 
 export default function AnticipationChargesArticle() {
@@ -24,7 +28,7 @@ export default function AnticipationChargesArticle() {
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
-      <Link href="/sections/cabinet/ressources" className="back-button">
+      <Link href="/ressources" className="back-button">
         <i className="fas fa-arrow-left"></i> Retour aux ressources
       </Link>
 

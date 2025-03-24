@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "Activité libérale : Quel régime fiscal choisir ? | Cabinet Franck Lebeurre",
   description: "Guide complet pour choisir le régime fiscal optimal pour votre activité libérale. Comparez micro-BNC, déclaration contrôlée et options d'imposition à l'IS. Conseils d'expert-comptable 2025.",
   keywords: "régime fiscal libéral, micro-BNC vs réel, fiscalité profession libérale, BNC déclaration contrôlée, imposition libéral, expert-comptable, optimisation fiscale",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/articles/regime-fiscal-liberal',
+  },  
 };
 
 export default function RegimeFiscalArticle() {
@@ -24,7 +28,7 @@ export default function RegimeFiscalArticle() {
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
-      <Link href="/sections/cabinet/ressources" className="back-button">
+      <Link href="/ressources" className="back-button">
         <i className="fas fa-arrow-left"></i> Retour aux ressources
       </Link>
 

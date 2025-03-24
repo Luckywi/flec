@@ -6,6 +6,11 @@ export const metadata: Metadata = {
   title: "Solutions Cloud Comptabilité | Digitalisation & Accessibilité | Cabinet Franck Lebeurre",
   description: "Digitalisation de votre comptabilité : accès sécurisé à vos données comptables depuis n'importe quel appareil. Échange facilité de documents et collaboration à distance avec votre expert-comptable.",
   keywords: "comptabilité cloud, digitalisation cabinet comptable, accès données comptables, collaboration à distance, documents numériques",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/solutions/cloud',
+  },
+  
 };
 
 export default function ProfessionsLiberales() {

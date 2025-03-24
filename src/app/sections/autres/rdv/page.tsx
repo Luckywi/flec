@@ -6,6 +6,10 @@ export const metadata: Metadata = {
     title: "Prenez Rendez-vous Gratuitement | Analyse Offerte | Cabinet Franck Lebeurre",
     description: "Obtenez une analyse gratuite de votre situation par un expert-comptable en 24h. Rendez-vous en visioconférence, analyse personnalisée et débriefing téléphonique. Accompagnement sur mesure pour votre activité.",
     keywords: "rendez-vous expert-comptable, analyse comptable gratuite, consultation comptable, visioconférence expert-comptable, premier contact cabinet comptable",
+
+    alternates: {
+      canonical: 'https://www.francklebeurre-expertise.fr/rendez-vous',
+    },  
   };
   
 export default function RDV() {

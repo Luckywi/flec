@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "Gestion de Patrimoine| Cabinet Franck Lebeurre | Conseil Patrimonial",
   description: "Expert-comptable spécialisé en gestion de patrimoine : conseil en transmission d'entreprise, optimisation fiscale et planification patrimoniale. Expertise pluridisciplinaire pour votre patrimoine professionnel et personnel.",
   keywords: "gestion patrimoine, conseil patrimonial, transmission entreprise, optimisation fiscale patrimoine, expert-comptable patrimoine",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/gestion-de-patrimoine',
+  },
 };
 
 

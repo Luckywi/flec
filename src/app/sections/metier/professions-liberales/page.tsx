@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Expert-Comptable Professions Libérales | Cabinet Franck Lebeurre | Conseil & Accompagnement",
   description: "Expert-comptable spécialisé professions libérales : conseil fiscal personnalisé, optimisation comptable, accompagnement dédié dès 62€/mois. Plus de 250 professionnels libéraux nous font confiance.",
   keywords: "expert-comptable professions libérales, comptabilité libérale, fiscalité profession libérale, optimisation BNC, accompagnement libéral",
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/professions-liberales',
+  },
 };
 
 export default function ProfessionsLiberales() {

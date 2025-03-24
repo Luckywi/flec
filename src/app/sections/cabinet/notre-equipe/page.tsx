@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     title: "Notre Équipe d'Experts Comptables | Expertise Multiple | Cabinet Franck Lebeurre",
     description: "Découvrez l'équipe du cabinet Franck Lebeurre : experts-comptables, chefs de mission et collaborateurs spécialisés. Une équipe disponible et réactive, experte en professions libérales, SCI, LMNP et paie. Accompagnement personnalisé digital.",
     keywords: "équipe expert-comptable, expertise comptable spécialisée, collaborateurs comptables, expertise SCI, comptabilité LMNP, gestion paie",
+
+    alternates: {
+      canonical: 'https://www.francklebeurre-expertise.fr/cabinet/equipe',
+    },  
   };
   
 export default function NotreEquipe() {

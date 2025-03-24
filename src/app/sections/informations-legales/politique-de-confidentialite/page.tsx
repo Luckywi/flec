@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Politique de Confidentialité | Cabinet Franck Lebeurre",
   description: "Politique de confidentialité du cabinet d'expertise comptable Franck Lebeurre : protection des données et respect du RGPD.",
   robots: "noindex, follow",
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/politique-de-confidentialite',
+  },
+  
 };
 
 export default function PolitiqueConfidentialite() {

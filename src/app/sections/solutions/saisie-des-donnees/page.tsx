@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: "Saisie Comptable Simplifiée | Traitement Optimisé | Cabinet Franck Lebeurre",
   description: "Solution de saisie comptable simplifiée et sécurisée avec matrices Excel personnalisées. Adaptée à votre activité et accessible en permanence via notre espace Cloud partagé pour une gestion efficace.",
   keywords: "saisie comptable, comptabilité Excel, données comptables, espace Cloud comptable, traitement comptable simplifié",
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/solutions/saisie-comptable',
+  },
 };
 
 export default function ProfessionsLiberales() {

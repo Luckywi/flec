@@ -9,14 +9,10 @@ const urlsToCache = [
   '/solutions-sur-mesure',
   '/cabinet/presentation',
   '/rendez-vous',
-  '/favicon/site.webmanifest',
-  '/favicon/icon-192x192.webp',
-  '/favicon/icon-512x512.webp',
+  '/manifest.json',
+  '/favicon/web-app-manifest-192x192.png',
+  '/favicon/web-app-manifest-512x512.png',
   '/images/franck.webp',
-  '/styles/main.css',
-  '/styles/components/header.css',
-  '/styles/components/footer.css',
-  '/styles/pages/home.css',
   '/videos/248704680-4k-time-lapse-blooming-dahlia-_H264HD1080.mp4'
 ];
 

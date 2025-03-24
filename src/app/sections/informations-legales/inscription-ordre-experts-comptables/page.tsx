@@ -5,6 +5,10 @@ export const metadata: Metadata = {
   title: "Inscription Ordre des Experts-Comptables | Cabinet Franck Lebeurre",
   description: "Inscription à l'Ordre des Experts-Comptables de Bourgogne-Franche-Comté du cabinet Franck Lebeurre Expert-Comptable. Vérifiez nos qualifications professionnelles.",
   robots: "noindex, follow",
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/ordre-experts-comptables',
+  },
+  
 };
 
 export default function InscriptionOrdre() {

@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   title: "La voiture, un bon outil d'optimisation fiscale ? | Cabinet Franck Lebeurre",
   description: "Voiture à l'actif ou indemnités kilométriques ? Découvrez l'option la plus avantageuse fiscalement pour votre véhicule en profession libérale. Analyse comparative et conseils d'expert-comptable.",
   keywords: "voiture profession libérale, optimisation fiscale véhicule, indemnités kilométriques, frais réels automobile, amortissement voiture libéral, expert-comptable, avantage en nature",
+
+  alternates: {
+    canonical: 'https://www.francklebeurre-expertise.fr/articles/voiture-optimisation-fiscale',
+  },  
 };
 
 export default function VoitureFiscaliteArticle() {
@@ -24,7 +28,7 @@ export default function VoitureFiscaliteArticle() {
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
-      <Link href="/sections/cabinet/ressources" className="back-button">
+      <Link href="/ressources" className="back-button">
         <i className="fas fa-arrow-left"></i> Retour aux ressources
       </Link>
 

@@ -7,6 +7,10 @@ export const metadata: Metadata = {
     title: "Cabinet d'Expertise Comptable à Mâcon | Bureaux & Couverture Nationale | Franck Lebeurre",
     description: "Cabinet d'expertise comptable basé à Mâcon avec rayonnement national : proximité locale et services digitaux à distance, présence en France métropolitaine et DOM. Rendez-vous possibles près de Lyon et Bourg-en-Bresse.",
     keywords: "cabinet expertise comptable Mâcon, expert-comptable Lyon, comptable Bourg-en-Bresse, couverture nationale comptable, expertise comptable à distance",
+
+    alternates: {
+      canonical: 'https://www.francklebeurre-expertise.fr/cabinet/bureaux',
+    },  
   };
 
 export default function NosBureaux() {
@@ -67,7 +71,7 @@ export default function NosBureaux() {
             Forts de nos principes déontologiques, notre mission consiste à vous aider pour assurer la pérennité de votre
             activité.
           </p>
-          <Link href="/sections/metier/expertise-comptable" className="learn-more">
+          <Link href="/expertise-comptable" className="learn-more">
             En savoir plus <i className="fas fa-chevron-right"></i>
           </Link>
         </div>
@@ -77,7 +81,7 @@ export default function NosBureaux() {
             Nous comprenons les enjeux des professions libérales et offrons des services spécialisés pour répondre à leurs
             besoins spécifiques.
           </p>
-          <Link href="/sections/metier/professions-liberales" className="learn-more">
+          <Link href="/professions-liberales" className="learn-more">
             En savoir plus <i className="fas fa-chevron-right"></i>
           </Link>
         </div>
@@ -87,7 +91,7 @@ export default function NosBureaux() {
             Nous vous aidons à vous orienter dans un environnement législatif complexe avec des solutions sur mesure
             adaptées à votre entreprise ou à votre situation personnelle.
           </p>
-          <Link href="/sections/metier/solutions-sur-mesure" className="learn-more">
+          <Link href="/solutions-sur-mesure" className="learn-more">
             En savoir plus <i className="fas fa-chevron-right"></i>
           </Link>
         </div>
@@ -97,7 +101,7 @@ export default function NosBureaux() {
             Nous vous accompagnons dans l&apos;optimisation et la valorisation de votre patrimoine pour assurer votre sécurité
             financière à long terme.
           </p>
-          <Link href="/sections/metier/gestion-de-patrimoine" className="learn-more">
+          <Link href="/gestion-de-patrimoine" className="learn-more">
             En savoir plus <i className="fas fa-chevron-right"></i>
           </Link>
         </div>
