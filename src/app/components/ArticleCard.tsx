@@ -57,7 +57,7 @@ export default function ArticleCard({ article }: ArticleCardProps) {
       
       <p className="fl-card-excerpt">{article.excerpt}</p>
       
-      <Link href={`/sections/cabinet/ressources/${article.slug}`} className="fl-card-link">
+      <Link href={`/ressources/${article.slug}`} className="fl-card-link">
         Lire l&apos;article <i className="fas fa-arrow-right"></i>
       </Link>
     </article>

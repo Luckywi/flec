@@ -31,7 +31,7 @@ export default function NosBureaux() {
             Notre savoir faire et nos méthodes de travail entièrement digitalisées nous permettent de réaliser nos missions 
             à distance (jusque dans les DOM!) tout en conservant une relation étroite avec nos clients.
           </p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous<i className="far fa-calendar-alt"></i>
           </Link>
         </div>

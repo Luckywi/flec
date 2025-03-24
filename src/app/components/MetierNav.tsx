@@ -16,28 +16,28 @@ export default function ServiceNav({ activeService, backgroundImage, title }: Se
     >
       <nav className="nav-with-title">
         <Link 
-          href="/sections/metier/expertise-comptable" 
+          href="/expertise-comptable" 
           className={`nav-item ${activeService === "expertise-comptable" ? "active" : ""}`}
         >
           <i className="fas fa-calculator"></i>
           Expertise comptable
         </Link>
         <Link 
-          href="/sections/metier/solutions-sur-mesure" 
+          href="/solutions-sur-mesure" 
           className={`nav-item ${activeService === "solutions-sur-mesure" ? "active" : ""}`}
         >
           <i className="fas fa-chart-line"></i>
           Solutions sur mesure
         </Link>
         <Link 
-          href="/sections/metier/professions-liberales" 
+          href="/professions-liberales" 
           className={`nav-item ${activeService === "professions-liberales" ? "active" : ""}`}
         >
           <i className="fas fa-briefcase"></i>
           Professions libérales
         </Link>
         <Link 
-          href="/sections/metier/gestion-de-patrimoine" 
+          href="/gestion-de-patrimoine" 
           className={`nav-item ${activeService === "gestion-de-patrimoine" ? "active" : ""}`}
         >
           <i className="fas fa-piggy-bank"></i>

@@ -83,18 +83,18 @@ const Footer = () => {
               <h3>Liens rapides</h3>
               <ul>
                 <li><Link href="/">Accueil</Link></li>
-                <li><Link href="/sections/metier/expertise-comptable">Nos services</Link></li>
-                <li><Link href="/sections/cabinet/presentation">À propos</Link></li>
-                <li><Link href="/sections/autres/rdv">Contact</Link></li>
+                <li><Link href="/expertise-comptable">Nos services</Link></li>
+                <li><Link href="/cabinet/presentation">À propos</Link></li>
+                <li><Link href="/rendez-vous">Contact</Link></li>
               </ul>
             </div>
             <div className="footer-section">
               <h3>Informations légales</h3>
               <ul>
-                <li><Link href="/sections/informations-legales/mentions-legales">Mentions légales</Link></li>
-                <li><Link href="/sections/informations-legales/politique-de-confidentialite">Politique de confidentialité</Link></li>
-                <li><Link href="/sections/informations-legales/cgu">Conditions générales d&apos;utilisation</Link></li>
-                <li><Link href="/sections/informations-legales/inscription-ordre-experts-comptables">Inscription à l&apos;Ordre des Experts-Comptables</Link></li>
+                <li><Link href="/mentions-legales">Mentions légales</Link></li>
+                <li><Link href="/politique-de-confidentialite">Politique de confidentialité</Link></li>
+                <li><Link href="/conditions-utilisation">Conditions générales d&apos;utilisation</Link></li>
+                <li><Link href="/ordre-experts-comptables">Inscription à l&apos;Ordre des Experts-Comptables</Link></li>
               </ul>
             </div>
           </div>

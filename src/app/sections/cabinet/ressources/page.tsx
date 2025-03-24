@@ -143,7 +143,7 @@ export default function Ressources() {
           <p>
             Découvrez nos articles, guides et vidéos sur l&apos;actualité comptable, fiscale et entrepreneuriale. Des ressources pratiques pour vous accompagner dans le développement de votre activité.
           </p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous<i className="far fa-calendar-alt"></i>
           </Link>
         </div>

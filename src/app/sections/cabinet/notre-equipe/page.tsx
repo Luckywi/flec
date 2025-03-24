@@ -30,7 +30,7 @@ export default function NotreEquipe() {
             en privilégiant une relation cordiale et continue avec chacun de nos clients. Toujours à l&apos;écoute, nous mettons un point d&apos;honneur 
             à rester disponibles et réactifs pour répondre à vos besoins au quotidien.
           </p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous<i className="far fa-calendar-alt"></i>
           </Link>
         </div>

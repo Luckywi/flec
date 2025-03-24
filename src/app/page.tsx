@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Image from "next/image";
 
 
 
@@ -29,13 +30,13 @@ export default function Home() {
               développement harmonieux de votre patrimoine tant professionnel que personnel.
             </p>
           </div>
-          <Link href="/sections/autres/rdv" className="button-rdv">
+          <Link href="/rendez-vous" className="button-rdv">
             Obtenir une date de rendez-vous sous 24h<i className="fas fa-phone"></i>
           </Link>
         </div>
         <div className="video-background">
           <video autoPlay loop muted playsInline>
-            <source src="/videos/248704680-4k-time-lapse-blooming-dahlia-_H264HD1080.mp4" type="video/mp4" />
+            <source src="/videos/248704680-4k-time-lapse-blooming-dahlia-_H264HD1080.mp4" type="video/mp4" title="Vidéo page d'accueil Franck Lebeurre Expert-Comptable" />
             Votre navigateur ne supporte pas la lecture de vidéos.
           </video>
         </div>
@@ -69,7 +70,7 @@ export default function Home() {
           <div className="accordion-content">
             <p>
               Nous comprenons les enjeux des professions libérales et offrons des services spécialisés pour répondre à leurs
-              besoins spécifiques.<br /> <Link href="/sections/metier/expertise-comptable" className="learn-more">En
+              besoins spécifiques.<br /> <Link href="/sections/metier/professions-liberales" className="learn-more">En
                 savoir plus <i className="fas fa-chevron-right"></i></Link><br />
             </p>
           </div>
@@ -85,7 +86,7 @@ export default function Home() {
             <p>
               Nous vous aidons à vous orienter dans un environnement législatif complexe avec des solutions sur mesure
               adaptées à votre entreprise ou à votre situation personnelle.<br />
-              <Link href="/sections/metier/expertise-comptable" className="learn-more">En savoir plus <i
+              <Link href="/sections/metier/solutions-sur-mesure" className="learn-more">En savoir plus <i
                 className="fas fa-chevron-right"></i></Link><br />
             </p>
           </div>
@@ -100,7 +101,7 @@ export default function Home() {
           <div className="accordion-content">
             <p>
               Nous vous accompagnons dans l&apos;optimisation et la valorisation de votre patrimoine pour assurer votre sécurité
-              financière à long terme.<br /><Link href="/sections/metier/expertise-comptable"
+              financière à long terme.<br /><Link href="/sections/metier/gestion-de-patrimoine"
                 className="learn-more">En savoir plus <i className="fas fa-chevron-right"></i></Link><br />
             </p>
           </div>
@@ -213,21 +214,37 @@ export default function Home() {
 
       {/* Section Franck Lebeurre */}
       <section className="franck-lebeurre">
-        <div className="fl-content">
-          <img className="desktop-delete" src="/images/franck.webp" alt="Franck Lebeurre" />
-          <h1>Franck Lebeurre</h1>
-          <p>Fort d&apos;une expérience professionnelle de 25 ans passés aux côtés d&apos;entreprises de différents horizons, Franck
-            LEBEURRE met à profits son savoir faire aux services des entrepreneurs et professions libérales pour les
-            accompagner dans le développement de leur activité.</p>
-          <p>Entouré d&apos;une équipe de 7 collaborateurs, Franck LEBEURRE vous propose entre autres des solutions sur mesure
-            pour pérenniser votre patrimoine tant professionnel que personnel. Que vous soyez particulier,
-            micro-entrepreneur ou mandataire de société, nous saurons vous guider pour une structuration optimale de votre
-            activité. </p>
-        </div>
-        <div className="image">
-          <img src="/images/franck.webp" alt="Franck Lebeurre" />
-        </div>
-      </section>
-    </main>
+  <div className="fl-content">
+    <Image 
+      className="desktop-delete" 
+      src="/images/franck.webp" 
+      alt="Franck Lebeurre" 
+      width={702}
+      height={834}
+      priority
+      style={{ width: '30%', height: 'auto' }}
+    />
+    <h1>Franck Lebeurre</h1>
+    <p>Fort d&apos;une expérience professionnelle de 25 ans passés aux côtés d&apos;entreprises de différents horizons, Franck
+      LEBEURRE met à profits son savoir faire aux services des entrepreneurs et professions libérales pour les
+      accompagner dans le développement de leur activité.</p>
+    <p>Entouré d&apos;une équipe de 7 collaborateurs, Franck LEBEURRE vous propose entre autres des solutions sur mesure
+      pour pérenniser votre patrimoine tant professionnel que personnel. Que vous soyez particulier,
+      micro-entrepreneur ou mandataire de société, nous saurons vous guider pour une structuration optimale de votre
+      activité. </p>
+  </div>
+  <div className="image">
+    <Image 
+      src="/images/franck.webp" 
+      alt="Franck Lebeurre, Expert-Comptable" 
+      title="Franck Lebeurre, Expert-Comptable à Mâcon"
+      width={702}
+      height={834}
+      priority
+      style={{ width: '30%', height: 'auto' }} // Permet à vos styles CSS de prendre le relais
+    />
+  </div>
+</section>    
+</main>
   );
 }

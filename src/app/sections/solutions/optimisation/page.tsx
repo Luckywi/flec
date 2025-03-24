@@ -29,7 +29,7 @@ export default function ProfessionsLiberales() {
           <p>Limiter, diminuer, réguler, temporiser… l&apos;impôt et/ou les charges sociales pour favoriser le développement de
             votre activité. Notre expertise nous permet de mettre en place des leviers pour payer vos contributions de façon
             optimale mais toujours de façon juste, cohérente et surtout en respectant la législation.</p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous gratuit<i className="far fa-calendar-alt"></i>
           </Link>
         </div>

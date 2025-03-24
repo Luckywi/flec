@@ -69,10 +69,10 @@ const HeaderMobileMenu = () => {
             maxHeight: activeSubmenu === "uno" ? '500px' : '0',
             display: 'block' // Important: toujours afficher mais avec maxHeight à 0
           }}>
-            <Link href="/sections/cabinet/presentation" onClick={handleSubmenuLinkClick}>Présentation</Link>
-            <Link href="/sections/cabinet/nos-bureaux" onClick={handleSubmenuLinkClick}>Nos bureaux</Link>
-            <Link href="/sections/cabinet/notre-equipe" onClick={handleSubmenuLinkClick}>Notre équipe</Link>
-            <Link href="/sections/cabinet/ressources" onClick={handleSubmenuLinkClick}>Ressources</Link>
+            <Link href="/cabinet/presentation" onClick={handleSubmenuLinkClick}>Présentation</Link>
+            <Link href="/cabinet/bureaux" onClick={handleSubmenuLinkClick}>Nos bureaux</Link>
+            <Link href="/cabinet/equipe" onClick={handleSubmenuLinkClick}>Notre équipe</Link>
+            <Link href="/ressources" onClick={handleSubmenuLinkClick}>Ressources</Link>
           </div>
         </div>
         
@@ -87,10 +87,10 @@ const HeaderMobileMenu = () => {
             maxHeight: activeSubmenu === "duo" ? '500px' : '0',
             display: 'block'
           }}>
-            <Link href="/sections/metier/expertise-comptable" onClick={handleSubmenuLinkClick}>Expertise comptable</Link>
-            <Link href="/sections/metier/solutions-sur-mesure" onClick={handleSubmenuLinkClick}>Solutions sur mesure</Link>
-            <Link href="/sections/metier/professions-liberales" onClick={handleSubmenuLinkClick}>Professions libérales</Link>
-            <Link href="/sections/metier/gestion-de-patrimoine" onClick={handleSubmenuLinkClick}>Gestion de patrimoine</Link>
+            <Link href="/expertise-comptable" onClick={handleSubmenuLinkClick}>Expertise comptable</Link>
+            <Link href="/solutions-sur-mesure" onClick={handleSubmenuLinkClick}>Solutions sur mesure</Link>
+            <Link href="/professions-liberales" onClick={handleSubmenuLinkClick}>Professions libérales</Link>
+            <Link href="/gestion-de-patrimoine" onClick={handleSubmenuLinkClick}>Gestion de patrimoine</Link>
           </div>
         </div>
         
@@ -105,19 +105,19 @@ const HeaderMobileMenu = () => {
             maxHeight: activeSubmenu === "tres" ? '500px' : '0',
             display: 'block'
           }}>
-            <Link href="/sections/solutions/cloud" onClick={handleSubmenuLinkClick}>Cloud</Link>
-            <Link href="/sections/solutions/saisie-des-donnees" onClick={handleSubmenuLinkClick}>Saisie des données</Link>
-            <Link href="/sections/solutions/previsionnels" onClick={handleSubmenuLinkClick}>Prévisionnels</Link>
-            <Link href="/sections/solutions/modulation" onClick={handleSubmenuLinkClick}>Modulation</Link>
-            <Link href="/sections/solutions/optimisation" onClick={handleSubmenuLinkClick}>Optimisation</Link>
-            <Link href="/sections/solutions/web-master" onClick={handleSubmenuLinkClick}>Web master</Link>
+            <Link href="/solutions/cloud" onClick={handleSubmenuLinkClick}>Cloud</Link>
+            <Link href="/solutions/saisie-comptable" onClick={handleSubmenuLinkClick}>Saisie des données</Link>
+            <Link href="/solutions/previsionnels" onClick={handleSubmenuLinkClick}>Prévisionnels</Link>
+            <Link href="/solutions/modulation-charges" onClick={handleSubmenuLinkClick}>Modulation</Link>
+            <Link href="/solutions/optimisation-fiscale" onClick={handleSubmenuLinkClick}>Optimisation</Link>
+            <Link href="/solutions/web-marketing" onClick={handleSubmenuLinkClick}>Web master</Link>
           </div>
         </div>
         
         <div style={{ display: 'flex', flexDirection: 'row' }}>
           <Link 
             style={{ border: '2px solid white', borderRadius: '10px', marginRight: '30px' }}
-            href="/sections/autres/rdv"
+            href="/rendez-vous"
             onClick={handleSubmenuLinkClick}
           >
             Se faire appeler<i className="fas fa-phone"></i>

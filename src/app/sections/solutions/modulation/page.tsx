@@ -30,7 +30,7 @@ export default function ProfessionsLiberales() {
             privilégions la mise en place de versements d&apos;acomptes provisionnels mensuels ajustés à vos prévisions ce qui
             permet de régler en temps réel la quasi totalité des sommes dues aux administrations. Ainsi, la gestion de votre
             trésorerie s&apos;en trouve facilité et vous met à l&apos;abri de très mauvaises surprises. </p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous gratuit<i className="far fa-calendar-alt"></i>
           </Link>
         </div>

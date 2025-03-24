@@ -16,42 +16,42 @@ export default function ServiceNav({ activeService, backgroundImage, title }: Se
     >
       <nav className="nav-with-title">
         <Link 
-          href="/sections/solutions/cloud" 
+          href="/solutions/cloud" 
           className={`nav-item ${activeService === "cloud" ? "active" : ""}`}
         >
           <i className="fas fa-cloud"></i>
           Cloud
         </Link>
         <Link 
-          href="/sections/solutions/saisie-des-donnees" 
+          href="/solutions/saisie-comptable" 
           className={`nav-item ${activeService === "saisie-des-donnees" ? "active" : ""}`}
         >
           <i className="fas fa-keyboard"></i>
           Saisie des données
         </Link>
         <Link 
-          href="/sections/solutions/previsionnels" 
+          href="/solutions/previsionnels" 
           className={`nav-item ${activeService === "previsionnels" ? "active" : ""}`}
         >
           <i className="fas fa-chart-line"></i>
           Prévisionnels
         </Link>
         <Link 
-          href="/sections/solutions/modulation" 
+          href="/solutions/modulation-charges" 
           className={`nav-item ${activeService === "modulation" ? "active" : ""}`}
         >
           <i className="fas fa-sliders-h"></i>
           Modulation
         </Link>
         <Link 
-          href="/sections/solutions/optimisation" 
+          href="/solutions/optimisation-fiscale" 
           className={`nav-item ${activeService === "optimisation" ? "active" : ""}`}
         >
           <i className="fas fa-rocket"></i>
           Optimisation
         </Link>
         <Link 
-          href="/sections/solutions/web-master" 
+          href="/solutions/web-marketing" 
           className={`nav-item ${activeService === "web-master" ? "active" : ""}`}
         >
           <i className="fas fa-code"></i>

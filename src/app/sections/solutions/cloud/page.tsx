@@ -33,7 +33,7 @@ export default function ProfessionsLiberales() {
             En fonction de l&apos;organisation de votre comptabilité, la version basic de DROPBOX (non payante) permettra soit,
             d&apos;y numériser vos pièces comptables soit, d&apos;avoir accès au fichier centralisant
             vos données chiffrées.</p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous gratuit<i className="far fa-calendar-alt"></i>
           </Link>
         </div>

@@ -33,7 +33,7 @@ export default function ProfessionsLiberales() {
             plus pertinentes, elles apportent une visibilité prédictive fiable et permettent de prendre des décisions
             stratégiques en amont pour plus d&apos;impact.
           </p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous gratuit<i className="far fa-calendar-alt"></i>
           </Link>
         </div>

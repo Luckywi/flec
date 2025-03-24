@@ -18,34 +18,34 @@ const Header = () => {
             <li className="menu-item">
               <a href="#">Le cabinet<i className="fas fa-chevron-down"></i></a>
               <ul className="submenu">
-                <li><Link href="/sections/cabinet/presentation">Présentation</Link></li>
-                <li><Link href="/sections/cabinet/nos-bureaux">Nos bureaux</Link></li>
-                <li><Link href="/sections/cabinet/notre-equipe">Notre équipe</Link></li>
-                <li><Link href="/sections/cabinet/ressources">Ressources</Link></li>
+                <li><Link href="/cabinet/presentation">Présentation</Link></li>
+                <li><Link href="/cabinet/bureaux">Nos bureaux</Link></li>
+                <li><Link href="/cabinet/equipe">Notre équipe</Link></li>
+                <li><Link href="/ressources">Ressources</Link></li>
               </ul>
             </li>
             <li className="menu-item">
               <a href="#">Notre métier<i className="fas fa-chevron-down"></i></a>
               <ul className="submenu">
-                <li><Link href="/sections/metier/expertise-comptable">Expertise comptable</Link></li>
-                <li><Link href="/sections/metier/solutions-sur-mesure">Solutions sur mesure</Link></li>
-                <li><Link href="/sections/metier/professions-liberales">Professions libérales</Link></li>
-                <li><Link href="/sections/metier/gestion-de-patrimoine">Gestion de patrimoine</Link></li>
+                <li><Link href="/expertise-comptable">Expertise comptable</Link></li>
+                <li><Link href="/solutions-sur-mesure">Solutions sur mesure</Link></li>
+                <li><Link href="/professions-liberales">Professions libérales</Link></li>
+                <li><Link href="/gestion-de-patrimoine">Gestion de patrimoine</Link></li>
               </ul>
             </li>
             <li className="menu-item">
               <a href="#">Nos solutions<i className="fas fa-chevron-down"></i></a>
               <ul className="submenu">
-                <li><Link href="/sections/solutions/cloud">Cloud</Link></li>
-                <li><Link href="/sections/solutions/saisie-des-donnees">Saisie des données</Link></li>
-                <li><Link href="/sections/solutions/previsionnels">Prévisionnels</Link></li>
-                <li><Link href="/sections/solutions/modulation">Modulation</Link></li>
-                <li><Link href="/sections/solutions/optimisation">Optimisation</Link></li>
-                <li><Link href="/sections/solutions/web-master">Web master</Link></li>
+                <li><Link href="/solutions/cloud">Cloud</Link></li>
+                <li><Link href="/solutions/saisie-comptable">Saisie des données</Link></li>
+                <li><Link href="/solutions/previsionnels">Prévisionnels</Link></li>
+                <li><Link href="/solutions/modulation-charges">Modulation</Link></li>
+                <li><Link href="/solutions/optimisation-fiscale">Optimisation</Link></li>
+                <li><Link href="/solutions/web-marketing">Web master</Link></li>
               </ul>
             </li>
             <li className="menu-item visible">
-              <Link href="/sections/autres/rdv">Se faire appeler<i className="fas fa-phone"></i></Link>
+              <Link href="/rendez-vous">Se faire appeler<i className="fas fa-phone"></i></Link>
             </li>
           </ul>
         </nav>

@@ -85,7 +85,7 @@ export default function ProfessionsLiberales() {
             <p><strong>Connaissance poussée de votre situation : </strong>nous nous occupons de +250 clients pratiquant une activité libérale</p>
             <p><strong>Des formules avantageuses : </strong>le suivi d&apos;un professionnel en activité libérale à partir de 62€ par mois</p>
           </ul>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous gratuit<i className="far fa-calendar-alt"></i>
           </Link>
         </div>

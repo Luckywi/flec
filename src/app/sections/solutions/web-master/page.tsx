@@ -32,7 +32,7 @@ export default function ProfessionsLiberales() {
             référencement mais aussi pour organiser des campagnes de communication sur les réseaux sociaux (Facebook,
             Instagram).
             Retours sur investissement garantis !</p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous gratuit<i className="far fa-calendar-alt"></i>
           </Link>
         </div>

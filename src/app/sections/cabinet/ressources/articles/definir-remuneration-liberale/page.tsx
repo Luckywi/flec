@@ -388,7 +388,7 @@ export default function RemunerationLiberaleArticle() {
       </div>
 
       <div className="article-cta">
-        <Link href="/sections/autres/rdv" className="cta-button">
+        <Link href="/rendez-vous" className="cta-button">
           Prendre rendez-vous<i className="far fa-calendar-alt"></i>
         </Link>
       </div>

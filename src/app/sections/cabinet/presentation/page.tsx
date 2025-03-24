@@ -29,7 +29,7 @@ export default function Presentation() {
             notamment des petites structures aux profils variés. Ceci étant, nous nous distinguons grâce à notre
             spécialisation dans l&apos;accompagnement des professionnels du <u>secteur de la santé</u>.
           </p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous<i className="far fa-calendar-alt"></i>
           </Link>
         </div>
@@ -43,7 +43,7 @@ export default function Presentation() {
             Forts de nos principes déontologiques, notre mission consiste à vous aider pour assurer la pérennité de votre
             activité.
           </p>
-          <Link href="/sections/metier/expertise-comptable" className="learn-more">
+          <Link href="/expertise-comptable" className="learn-more">
             En savoir plus <i className="fas fa-chevron-right"></i>
           </Link>
         </div>
@@ -53,7 +53,7 @@ export default function Presentation() {
             Nous comprenons les enjeux des professions libérales et offrons des services spécialisés pour répondre à leurs
             besoins spécifiques.
           </p>
-          <Link href="/sections/metier/professions-liberales" className="learn-more">
+          <Link href="/professions-liberales" className="learn-more">
             En savoir plus <i className="fas fa-chevron-right"></i>
           </Link>
         </div>
@@ -63,7 +63,7 @@ export default function Presentation() {
             Nous vous aidons à vous orienter dans un environnement législatif complexe avec des solutions sur mesure
             adaptées à votre entreprise ou à votre situation personnelle.
           </p>
-          <Link href="/sections/metier/solutions-sur-mesure" className="learn-more">
+          <Link href="/solutions-sur-mesure" className="learn-more">
             En savoir plus <i className="fas fa-chevron-right"></i>
           </Link>
         </div>
@@ -73,7 +73,7 @@ export default function Presentation() {
             Nous vous accompagnons dans l&apos;optimisation et la valorisation de votre patrimoine pour assurer votre sécurité
             financière à long terme.
           </p>
-          <Link href="/sections/metier/gestion-de-patrimoine" className="learn-more">
+          <Link href="/gestion-de-patrimoine" className="learn-more">
             En savoir plus <i className="fas fa-chevron-right"></i>
           </Link>
         </div>

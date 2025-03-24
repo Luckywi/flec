@@ -30,7 +30,7 @@ export default function ProfessionsLiberales() {
             particularités de votre activité, simples d&apos;utilisation en limitant les coûts de votre traitement comptable. Que
             vous choisissiez de saisir vous même vos données ou de nous déléguer cette tâche, vous y avez accès en
             permanence grâce à notre espace Cloud partagé.</p>
-          <Link href="/sections/autres/rdv" className="cta-button">
+          <Link href="/rendez-vous" className="cta-button">
             Obtenir un rendez-vous gratuit<i className="far fa-calendar-alt"></i>
           </Link>
         </div>
