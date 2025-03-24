@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SchemaOrg from "./components/SchemaOrg"; 
 import "@/styles/main.css";
+import Script from "next/script"; 
 
 // Style pour garantir que les polices Next.js sont disponibles sans perturber les styles existants
 
@@ -45,6 +46,8 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.webp" sizes="180x180" />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <SchemaOrg />
+
+        <Script src="/register-sw.js" strategy="afterInteractive" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />

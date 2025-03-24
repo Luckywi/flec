@@ -1,0 +1,39 @@
+User-agent: *
+Allow: /
+
+# Pages principales - permettre l'indexation prioritaire
+Allow: /expertise-comptable
+Allow: /professions-liberales
+Allow: /gestion-de-patrimoine
+Allow: /solutions-sur-mesure
+Allow: /solutions/
+Allow: /cabinet/
+Allow: /articles/
+Allow: /ressources
+Allow: /rendez-vous
+
+# Éviter l'indexation des pages légales (moins prioritaires pour le SEO)
+Disallow: /mentions-legales
+Disallow: /politique-de-confidentialite
+Disallow: /conditions-utilisation
+Disallow: /ordre-experts-comptables
+
+# Chemins internes de Next.js à ne pas indexer
+Disallow: /_next/
+Disallow: /api/
+
+# Éviter les URLs avec paramètres de requête (pour éviter le contenu dupliqué)
+Disallow: /*?*
+
+# Indiquer l'emplacement du sitemap
+Sitemap: https://www.francklebeurre-expertise.fr/sitemap.xml
+
+# Règles spécifiques pour Googlebot pour optimiser le budget de crawl
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Règles pour Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
