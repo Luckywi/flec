@@ -96,6 +96,38 @@ export default function ProfessionsLiberales() {
 
       {/* Section accordéon */}
       <Accordion items={accordionItems} />
+      {/* Section Recommandations d'articles */}
+      {/* Section Recommandations d'articles */}
+<section>
+  <div className="section-container">
+    <h3 style={{ color: "white", marginBottom: "25px"}}>Articles recommandés pour les professions libérales</h3>
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px"}}>
+      <div style={{ border: "2px solid white", borderRadius: "10px", padding: "20px", width: "80%", margin:"auto"}}>
+        <h4 style={{ color: "white", marginTop: "0" }}>Comprendre votre régime fiscal optimal</h4>
+        <h5 style={{ color: "white" }}>
+          Micro-BNC, déclaration contrôlée ou société ? Découvrez comment 
+          choisir le régime fiscal le plus avantageux pour votre activité libérale
+          en fonction de votre situation spécifique.
+        </h5>
+        <Link href="/articles/regime-fiscal-liberal" style={{color: "white", textDecoration:"none", padding:"10px", display:"flex",  width: "fit-content", margin:"auto",border: "2px solid white", borderRadius: "10px"}}>
+          Lire l&apos;article sur les régimes fiscaux
+        </Link>
+      </div>
+      
+      <div style={{ border: "2px solid white", borderRadius: "10px", padding: "20px", width: "80%", margin:"auto"}}>
+        <h4 style={{ color: "white", marginTop: "0" }}>Anticiper vos charges sociales</h4>
+        <h5 style={{ color: "white" }}>
+          Évitez l&apos;effet falaise de la 3ème année d&apos;activité ! Découvrez comment 
+          provisionner correctement et optimiser votre trésorerie dès le début de votre activité.
+        </h5>
+        <Link href="/articles/anticipation-charges-liberales" style={{color: "white", textDecoration:"none", padding:"10px", display:"flex", width: "fit-content", margin:"auto", border: "2px solid white", borderRadius: "10px"}}>
+          Lire l&apos;article sur l&apos;anticipation des charges
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
+
     </main>
   );
 }

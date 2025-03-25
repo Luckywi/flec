@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import RegimeFiscalLiberaleSchema from "./RegimeFiscalLiberaleSchema";
 import "@/styles/pages/article.css";
+import ArticleRecommendations from "@/app/components/ArticleRecommendations";
 import ArticleTocAccordion from "@/app/components/ArticleAccordion";
 
 export const metadata: Metadata = {
@@ -12,6 +14,22 @@ export const metadata: Metadata = {
     canonical: 'https://www.francklebeurre-expertise.fr/articles/regime-fiscal-liberal',
   },  
 };
+
+const articleRecommendations = [
+  {
+    title: "Anticiper vos charges sociales en activité libérale",
+    description: "Évitez l'effet falaise de la 3ème année d'activité ! Découvrez comment provisionner correctement et optimiser votre trésorerie dès le début de votre activité libérale.",
+    link: "/articles/anticipation-charges-liberales",
+    buttonText: "Maîtriser mes charges sociales"
+  },
+  {
+    title: "Le PER : un outil d'optimisation fiscale efficace",
+    description: "Le Plan d'Épargne Retraite représente une opportunité stratégique pour réduire votre pression fiscale tout en préparant votre avenir. Découvrez notre analyse complète.",
+    link: "/articles/per-optimisation-fiscale",
+    buttonText: "Optimiser ma fiscalité avec le PER"
+  }
+];
+
 
 export default function RegimeFiscalArticle() {
   // Définir les tags de l'article
@@ -25,6 +43,7 @@ export default function RegimeFiscalArticle() {
 
   return (
     <main className="article-container">
+      <RegimeFiscalLiberaleSchema />
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
@@ -479,6 +498,11 @@ export default function RegimeFiscalArticle() {
           Prendre rendez-vous<i className="far fa-calendar-alt"></i>
         </Link>
       </div>
+
+      <ArticleRecommendations 
+  recommendations={articleRecommendations} 
+  sectionTitle="Autres stratégies d'optimisation fiscale à explorer" 
+/>
     </main>
   );
 

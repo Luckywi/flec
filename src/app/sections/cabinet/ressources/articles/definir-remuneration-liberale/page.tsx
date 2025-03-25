@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import DefinirRemunerationLiberaleSchema from "./DefinirRemunerationLiberaleSchema";
+import ArticleRecommendations from "@/app/components/ArticleRecommendations";
 import "@/styles/pages/article.css";
 import ArticleTocAccordion from "@/app/components/ArticleAccordion";
 
@@ -13,6 +15,21 @@ export const metadata: Metadata = {
   },  
 };
 
+const articleRecommendations = [
+  {
+    title: "Économisez sur vos frais bancaires professionnels",
+    description: "Saviez-vous que la loi impose un compte dédié à votre activité, mais pas nécessairement un compte professionnel ? Découvrez comment cette distinction peut vous permettre d'économiser plusieurs centaines d'euros par an.",
+    link: "/articles/economiser-frais-bancaires-liberal",
+    buttonText: "Optimiser mes frais bancaires"
+  },
+  {
+    title: "Quel régime fiscal choisir pour votre activité libérale ?",
+    description: "Le choix du régime fiscal est déterminant pour la rentabilité de votre activité. Micro-BNC, déclaration contrôlée ou société ? Notre analyse comparative vous guide.",
+    link: "/articles/regime-fiscal-liberal",
+    buttonText: "Choisir mon régime fiscal optimal"
+  }
+];
+
 export default function RemunerationLiberaleArticle() {
   // Définir les tags de l'article
   const articleTags = [
@@ -25,6 +42,7 @@ export default function RemunerationLiberaleArticle() {
 
   return (
     <main className="article-container">
+      <DefinirRemunerationLiberaleSchema />
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
@@ -396,6 +414,11 @@ export default function RemunerationLiberaleArticle() {
           Prendre rendez-vous<i className="far fa-calendar-alt"></i>
         </Link>
       </div>
+
+      <ArticleRecommendations 
+  recommendations={articleRecommendations} 
+  sectionTitle="Pour aller plus loin dans l'optimisation de votre activité" 
+/>
     </main>
   );
 }

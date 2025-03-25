@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import VoitureOptimisationFiscaleSchema from "./VoitureOptimisationFiscaleSchema";
+import ArticleRecommendations from "@/app/components/ArticleRecommendations";
 import "@/styles/pages/article.css";
 import ArticleTocAccordion from "@/app/components/ArticleAccordion";
 
@@ -13,6 +15,22 @@ export const metadata: Metadata = {
   },  
 };
 
+const articleRecommendations = [
+  {
+    title: "Le PER : un outil d'optimisation fiscale efficace",
+    description: "Le Plan d'Épargne Retraite peut considérablement réduire votre pression fiscale tout en préparant votre avenir. Découvrez notre analyse des avantages et des stratégies d'utilisation.",
+    link: "/articles/per-optimisation-fiscale",
+    buttonText: "Découvrir les avantages du PER"
+  },
+  {
+    title: "Quel régime fiscal choisir pour votre activité libérale ?",
+    description: "Le choix du régime fiscal impacte directement votre capacité d'optimisation. Comparez le micro-BNC, la déclaration contrôlée et les options en société pour faire le meilleur choix.",
+    link: "/articles/regime-fiscal-liberal",
+    buttonText: "Optimiser mon régime fiscal"
+  }
+];
+
+
 export default function VoitureFiscaliteArticle() {
   // Définir les tags de l'article
   const articleTags = [
@@ -25,6 +43,7 @@ export default function VoitureFiscaliteArticle() {
 
   return (
     <main className="article-container">
+      <VoitureOptimisationFiscaleSchema />
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
@@ -355,6 +374,10 @@ export default function VoitureFiscaliteArticle() {
           Prendre rendez-vous<i className="far fa-calendar-alt"></i>
         </Link>
       </div>
+      <ArticleRecommendations 
+  recommendations={articleRecommendations} 
+  sectionTitle="Autres stratégies d'optimisation fiscale à explorer" 
+/>
     </main>
   );
 }

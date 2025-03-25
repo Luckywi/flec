@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import AnticipationChargesLiberalesSchema from "./AnticipationChargesLiberalesSchema";
+import ArticleRecommendations from "@/app/components/ArticleRecommendations";
 import "@/styles/pages/article.css";
 import ArticleTocAccordion from "@/app/components/ArticleAccordion";
 
@@ -13,6 +15,21 @@ export const metadata: Metadata = {
   },  
 };
 
+const articleRecommendations = [
+  {
+    title: "Économisez sur vos frais bancaires professionnels",
+    description: "Saviez-vous que la loi impose un compte dédié à votre activité, mais pas nécessairement un compte professionnel ? Découvrez comment cette distinction peut vous permettre d'économiser plusieurs centaines d'euros par an.",
+    link: "/articles/economiser-frais-bancaires-liberal",
+    buttonText: "Optimiser mes frais bancaires"
+  },
+  {
+    title: "Quelle est la meilleure rémunération pour votre activité ?",
+    description: "Déterminer une rémunération adaptée est essentiel pour la pérennité de votre activité libérale. Notre guide vous accompagne étape par étape dans cette décision stratégique.",
+    link: "/articles/remuneration-activite-liberale",
+    buttonText: "Structurer ma rémunération"
+  }
+];
+
 export default function AnticipationChargesArticle() {
   // Définir les tags de l'article
   const articleTags = [
@@ -25,6 +42,7 @@ export default function AnticipationChargesArticle() {
 
   return (
     <main className="article-container">
+      <AnticipationChargesLiberalesSchema />
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
@@ -289,6 +307,10 @@ export default function AnticipationChargesArticle() {
           Prendre rendez-vous<i className="far fa-calendar-alt"></i>
         </Link>
       </div>
+      <ArticleRecommendations 
+  recommendations={articleRecommendations} 
+  sectionTitle="Autres articles sur l'optimisation fiscale" 
+/>
     </main>
   );
 }

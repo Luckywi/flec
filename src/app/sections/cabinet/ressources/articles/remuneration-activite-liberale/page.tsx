@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
 import "@/styles/pages/article.css";
+import ArticleRecommendations from "@/app/components/ArticleRecommendations";
 import ArticleTocAccordion from "@/app/components/ArticleAccordion";
 import RemunerationArticleSchema from "./RemunerationArticleSchema";
 
@@ -13,6 +14,21 @@ export const metadata: Metadata = {
     canonical: 'https://www.francklebeurre-expertise.fr/articles/remuneration-activite-liberale',
   },  
 };
+
+const articleRecommendations = [
+  {
+    title: "Anticiper vos charges sociales en activité libérale",
+    description: "Évitez l'effet falaise de la 3ème année d'activité ! Notre guide vous explique comment provisionner correctement vos charges sociales dès le début pour éviter les mauvaises surprises.",
+    link: "/articles/anticipation-charges-liberales",
+    buttonText: "Anticiper mes charges sociales"
+  },
+  {
+    title: "Économisez sur vos frais bancaires professionnels",
+    description: "Saviez-vous que la loi impose un compte dédié à votre activité, mais pas nécessairement un compte professionnel ? Découvrez comment économiser plusieurs centaines d'euros par an.",
+    link: "/articles/economiser-frais-bancaires-liberal",
+    buttonText: "Réduire mes frais bancaires"
+  }
+];
 
 export default function RemunerationArticle() {
   // Définir les tags de l'article
@@ -386,6 +402,12 @@ export default function RemunerationArticle() {
           Prendre rendez-vous<i className="far fa-calendar-alt"></i>
         </Link>
       </div>
+
+      <ArticleRecommendations 
+  recommendations={articleRecommendations} 
+  sectionTitle="Articles complémentaires pour débutants en activité libérale" 
+/>
+
     </main>
   );
 }

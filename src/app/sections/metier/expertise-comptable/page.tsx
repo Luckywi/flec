@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import ServiceNav from "@/app/components/MetierNav";
 import Accordion from "@/app/components/Accordion";
 
@@ -47,7 +48,7 @@ export default function ExpertiseComptable() {
     },
     {
       id: "item4",
-      title: "Un sens de l&apos;éthique",
+      title: "Un sens de l'éthique",
       content: (
         <p>
           Nos règles professionnelles nous obligent et c&apos;est tant mieux ! Objectivité, intégrité, indépendance… autant
@@ -70,6 +71,22 @@ export default function ExpertiseComptable() {
 
       {/* Section accordéon */}
       <Accordion items={accordionItems} />
+      <section>
+  <div className="section-container">
+    <h3 style={{ color: "white", marginBottom: "25px"}}>Ressources d&apos;expertise comptable</h3>
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px"}}>
+      <div style={{ border: "2px solid white", borderRadius: "10px", padding: "20px", width: "80%", margin:"auto"}}>
+        <h4 style={{ color: "white", marginTop: "0" }}>Comment définir sa rémunération en activité libérale ?</h4>
+        <h5 style={{ color: "white" }}>
+          Déterminer une rémunération adaptée est essentiel pour la pérennité de votre activité libérale. Notre guide vous accompagne étape par étape dans cette décision stratégique et vous aide à trouver le juste équilibre entre viabilité économique et besoins personnels.
+        </h5>
+        <Link href="/articles/remuneration-activite-liberale" style={{color: "white", textDecoration:"none", padding:"10px", display:"flex", width: "fit-content", margin:"auto", border: "2px solid white", borderRadius: "10px"}}>
+          Optimiser votre rémunération libérale
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   );
 }

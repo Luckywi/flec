@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import EconomiserFraisBancairesSchema from "./EconomiserFraisBancairesSchema";
+import ArticleRecommendations from "@/app/components/ArticleRecommendations";
 import "@/styles/pages/article.css";
 import ArticleTocAccordion from "@/app/components/ArticleAccordion";
 
@@ -13,6 +15,21 @@ export const metadata: Metadata = {
   },  
 };
 
+const articleRecommendations = [
+  {
+    title: "La voiture : un bon outil d'optimisation fiscale ?",
+    description: "Inscrire son véhicule à l'actif ou opter pour les indemnités kilométriques ? Découvrez pourquoi cette seconde option est souvent bien plus avantageuse fiscalement pour les professions libérales.",
+    link: "/articles/voiture-optimisation-fiscale",
+    buttonText: "Optimiser la fiscalité de mon véhicule"
+  },
+  {
+    title: "Comment définir sa rémunération en activité libérale ?",
+    description: "Déterminer une rémunération adaptée est essentiel pour la pérennité de votre activité. Notre guide vous accompagne étape par étape dans cette décision stratégique.",
+    link: "/articles/definir-remuneration-liberale",
+    buttonText: "Structurer ma rémunération optimale"
+  }
+];
+
 export default function FraisBancairesArticle() {
   // Définir les tags de l'article
   const articleTags = [
@@ -25,6 +42,7 @@ export default function FraisBancairesArticle() {
 
   return (
     <main className="article-container">
+      <EconomiserFraisBancairesSchema />
       <ArticleTocAccordion />
       
       {/* Bouton retour */}
@@ -283,6 +301,11 @@ export default function FraisBancairesArticle() {
           Prendre rendez-vous<i className="far fa-calendar-alt"></i>
         </Link>
       </div>
+
+      <ArticleRecommendations 
+  recommendations={articleRecommendations} 
+  sectionTitle="Autres articles pour optimiser vos finances" 
+/>
     </main>
   );
 }

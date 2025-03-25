@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import PEROptimisationFiscaleSchema from "./PEROptimisationFiscaleSchema";
+import ArticleRecommendations from "@/app/components/ArticleRecommendations";
 import "@/styles/pages/article.css";
 import ArticleTocAccordion from "@/app/components/ArticleAccordion";
 
@@ -12,6 +14,21 @@ export const metadata: Metadata = {
     canonical: 'https://www.francklebeurre-expertise.fr/articles/per-optimisation-fiscale',
   },  
 };
+const articleRecommendations = [
+  {
+    title: "La voiture : un bon outil d'optimisation fiscale ?",
+    description: "Inscrire son véhicule à l'actif ou opter pour les indemnités kilométriques ? Découvrez pourquoi cette seconde option est souvent bien plus avantageuse fiscalement pour les professions libérales.",
+    link: "/articles/voiture-optimisation-fiscale",
+    buttonText: "Optimiser la fiscalité de mon véhicule"
+  },
+  {
+    title: "Quel régime fiscal choisir pour votre activité libérale ?",
+    description: "Le choix du régime fiscal est déterminant pour la rentabilité de votre activité. Micro-BNC, déclaration contrôlée ou société ? Notre analyse comparative vous guide vers la solution optimale.",
+    link: "/articles/regime-fiscal-liberal",
+    buttonText: "Découvrir le meilleur régime fiscal"
+  }
+];
+
 
 export default function PERArticle() {
   // Définir les tags de l'article
@@ -26,7 +43,7 @@ export default function PERArticle() {
   return (
     
     <main className="article-container">
-
+      <PEROptimisationFiscaleSchema />
       <ArticleTocAccordion />
       {/* Bouton retour */}
       <Link href="/ressources" className="back-button">
@@ -478,5 +495,8 @@ export default function PERArticle() {
           Prendre rendez-vous<i className="far fa-calendar-alt"></i>
         </Link>
       </div>
-
+      <ArticleRecommendations 
+  recommendations={articleRecommendations} 
+  sectionTitle="Pour aller plus loin dans votre stratégie d'optimisation fiscale" 
+/>
         </main> )}

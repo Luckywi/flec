@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import ServiceNav from "@/app/components/MetierNav";
 import Accordion from "@/app/components/Accordion";
 
@@ -54,6 +55,23 @@ export default function SolutionsSurMesure() {
 
       {/* Section accordéon */}
       <Accordion items={accordionItems} />
+
+      <section>
+  <div className="section-container">
+    <h3 style={{ color: "white", marginBottom: "25px"}}>Solutions personnalisées pour votre activité</h3>
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px"}}>
+      <div style={{ border: "2px solid white", borderRadius: "10px", padding: "20px", width: "80%", margin:"auto"}}>
+        <h4 style={{ color: "white", marginTop: "0" }}>Économisez sur vos frais bancaires professionnels</h4>
+        <h5 style={{ color: "white" }}>
+          Saviez-vous que la loi impose un compte dédié à votre activité, mais pas nécessairement un compte professionnel ? Découvrez comment cette distinction peut vous faire économiser plusieurs centaines d&apos;euros par an tout en respectant vos obligations légales.
+        </h5>
+        <Link href="/articles/economiser-frais-bancaires-liberal" style={{color: "white", textDecoration:"none", padding:"10px", display:"flex", width: "fit-content", margin:"auto", border: "2px solid white", borderRadius: "10px"}}>
+          Réduire vos frais bancaires professionnels
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   );
 }

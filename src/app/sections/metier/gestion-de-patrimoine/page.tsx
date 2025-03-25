@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import ServiceNav from "@/app/components/MetierNav";
 import Accordion from "@/app/components/Accordion";
 
@@ -62,6 +63,23 @@ export default function GestionPatrimoine() {
 
       {/* Section accordéon */}
       <Accordion items={accordionItems} />
+
+      <section>
+  <div className="section-container">
+    <h3 style={{ color: "white", marginBottom: "25px"}}>Ressources pour optimiser votre patrimoine</h3>
+    <div style={{ display: "flex", flexDirection: "column", gap: "20px"}}>
+      <div style={{ border: "2px solid white", borderRadius: "10px", padding: "20px", width: "80%", margin:"auto"}}>
+        <h4 style={{ color: "white", marginTop: "0" }}>Le PER : un outil d&apos;optimisation fiscale efficace</h4>
+        <h5 style={{ color: "white" }}>
+          Le Plan d&apos;Épargne Retraite représente une opportunité stratégique pour réduire votre pression fiscale tout en préparant votre avenir. Découvrez notre analyse complète sur ses avantages et comment l&apos;intégrer à votre stratégie patrimoniale.
+        </h5>
+        <Link href="/articles/per-optimisation-fiscale" style={{color: "white", textDecoration:"none", padding:"10px", display:"flex",  width: "fit-content", margin:"auto",border: "2px solid white", borderRadius: "10px"}}>
+          Tout savoir sur le PER et la fiscalité
+        </Link>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
   );
 }
