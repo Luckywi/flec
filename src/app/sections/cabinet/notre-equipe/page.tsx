@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import CabinetNav from "@/app/components/CabinetNav";
+import NotreEquipeSchema from "./NotreEquipeSchema";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -16,6 +17,8 @@ export const metadata: Metadata = {
 export default function NotreEquipe() {
   return (
     <main>
+
+<NotreEquipeSchema />
       {/* Navigation avec titre */}
       <section>
         <CabinetNav
