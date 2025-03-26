@@ -8,6 +8,7 @@
 @import url('pages/informations.css');
 @import url('pages/ressources.css');
 @import url('pages/article.css');
+@import url('pages/splash.css');
 
 body {
   font-family: 'Open Sans', Arial, sans-serif;
