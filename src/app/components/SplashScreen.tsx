@@ -1,33 +1,48 @@
-'use client'; // Si tu utilises le App Router de Next.js
+'use client';
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router'; // Pour Pages Router
-// Pour App Router, utilise: import { usePathname } from 'next/navigation';
+import { useState, useEffect, ReactNode } from 'react';
+import { usePathname } from 'next/navigation';
 import "@/styles/pages/splash.css";
 
-const SplashScreen = ({ children }) => {
-  const [showSplash, setShowSplash] = useState(true);
-  const router = useRouter();
+interface SplashScreenProps {
+  children: ReactNode;
+}
+
+const SplashScreen = ({ children }: SplashScreenProps) => {
+  const [showSplash, setShowSplash] = useState(false);
+  const pathname = usePathname();
+
+  // Dans SplashScreen.tsx
+useEffect(() => {
+    if (showSplash) {
+      // Empêcher le défilement quand le splash est actif
+      document.body.classList.add('splash-active');
+    } else {
+      document.body.classList.remove('splash-active');
+    }
+    
+    return () => {
+      document.body.classList.remove('splash-active');
+    };
+  }, [showSplash]);
   
   useEffect(() => {
-    // Masquer le SplashScreen après 2 secondes
-    const timer = setTimeout(() => {
+    // Affiche le splash screen uniquement sur la page d'accueil
+    if (pathname === '/') {
+      setShowSplash(true);
+      
+      // Masquer le SplashScreen après 2 secondes
+      const timer = setTimeout(() => {
+        setShowSplash(false);
+      }, 2000);
+      
+      return () => {
+        clearTimeout(timer);
+      };
+    } else {
       setShowSplash(false);
-    }, 2000);
-
-    // Configurer l'événement pour détecter la navigation interne
-    // Ne pas afficher le splash lors des navigations internes
-    const handleRouteChange = () => {
-      setShowSplash(false);
-    };
-
-    router.events.on('routeChangeStart', handleRouteChange);
-
-    return () => {
-      clearTimeout(timer);
-      router.events.off('routeChangeStart', handleRouteChange);
-    };
-  }, [router]);
+    }
+  }, [pathname]);
 
   return (
     <>
@@ -39,7 +54,9 @@ const SplashScreen = ({ children }) => {
           </div>
         </div>
       )}
-      {children}
+      <div className={showSplash ? '' : 'content-fade-in'}>
+        {children}
+      </div>
     </>
   );
 };

@@ -40,9 +40,17 @@ export default function Home() {
           </Link>
         </div>
         <div className="video-background">
-          <video autoPlay loop muted playsInline>
-            <source src="/videos/248704680-4k-time-lapse-blooming-dahlia-_H264HD1080.mp4" type="video/mp4" title="Vidéo page d'accueil Franck Lebeurre Expert-Comptable" />
-            Votre navigateur ne supporte pas la lecture de vidéos.
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline
+          preload="auto"
+          disablePictureInPicture
+          disableRemotePlayback
+              >
+          <source src="/videos/248704680-4k-time-lapse-blooming-dahlia-_H264HD1080.mp4" type="video/mp4" title="Vidéo page d'accueil Franck Lebeurre Expert-Comptable" />
+          Votre navigateur ne supporte pas la lecture de vidéos.
           </video>
         </div>
       </section>

@@ -1,12 +1,12 @@
+// Modifiez votre src/app/layout.tsx
 import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import SchemaOrg from "./components/SchemaOrg"; 
+import SchemaOrg from "./components/SchemaOrg";
+import SplashScreen from "./components/SplashScreen"; // Importez le composant
 import "@/styles/main.css";
-import Script from "next/script"; 
-
-// Style pour garantir que les polices Next.js sont disponibles sans perturber les styles existants
+import Script from "next/script";
 
 // Font configuration pour Next.js - on utilise uniquement les polices nécessaires
 // mais on garde aussi la balise link pour assurer la compatibilité
@@ -38,8 +38,9 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
-        {/* Font Awesome est toujours chargé via CDN car il n'est pas optimisé par next/font */}
         {/* Favicons */}
+        <link rel="icon" type="image/png" href="/favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="/favicon/favicon-32x32.png" sizes="32x32" />
         <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
@@ -51,11 +52,12 @@ export default function RootLayout({
         <Script src="/register-sw.js" strategy="afterInteractive" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Header />
-        {children}
-        <Footer />
+        <SplashScreen>
+          <Header />
+          {children}
+          <Footer />
+        </SplashScreen>
       </body>
     </html>
   );
 }
-
